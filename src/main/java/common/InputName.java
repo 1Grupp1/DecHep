@@ -25,6 +25,6 @@ public class InputName {
 
 		} 
 		return compName;
-		//HEJHOPP
+
 	} 
 }
