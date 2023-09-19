@@ -5,6 +5,12 @@ import java.util.Scanner;
 public class InputResult {
 	double inputResult = 0;
 
+	private static double result;
+
+	public static int getResult() {
+		return (int) result;
+	}
+
 	public double enterResult() {
 		Scanner sc = new Scanner(System.in);
 		boolean active = true;
@@ -12,11 +18,12 @@ public class InputResult {
 			System.out.println("Please enter the result:");
 			try {
 
-				inputResult = Double.parseDouble(sc.nextLine());
+				result = Double.parseDouble(sc.nextLine());
+				inputResult=result;
 				active = false;
 			} catch (Exception e) {
 				System.out.println("Invalid input, try again.");
-				
+
 			}
 
 		}
