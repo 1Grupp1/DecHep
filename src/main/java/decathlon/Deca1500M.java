@@ -20,10 +20,10 @@ public class Deca1500M {
 
 			try {
 				// Acceptable values.
-				if (runningTime < 2) {
+				if (runningTime < 120) {
 					System.out.println("Value too low");
 					runningTime = inputResult.enterResult();
-				} else if (runningTime > 7) {
+				} else if (runningTime > 475) {
 					System.out.println("Value too high");
 					runningTime = inputResult.enterResult();
 				} else {
