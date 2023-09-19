@@ -209,15 +209,15 @@ public class SelectDiscipline {
 				deca1500M.calculateResult(inputResult.enterResult());
 				break;
 			case 5:
-				System.out.println("You have selected Deca Long Jump, input your result in meter");
+				System.out.println("You have selected Deca Long Jump, input your result in centimeter");
 				decaLongJump.calculateResult(inputResult.enterResult());
 				break;
 			case 6:
-				System.out.println("You have selected Deca High Jump, input your result in meter");
+				System.out.println("You have selected Deca High Jump, input your result in centimeter");
 				highJump.calculateResult(inputResult.enterResult());
 				break;
 			case 7:
-				System.out.println("You have selected Deca Pole Vault, input your result in meter");
+				System.out.println("You have selected Deca Pole Vault, input your result in centimeter");
 				poleVault.calculateResult(inputResult.enterResult());
 				break;
 			case 8:
@@ -256,16 +256,16 @@ public class SelectDiscipline {
 
 	public void printDisciplinesDecathlon() {
 
-		System.out.println("1. Decathlon 100 meters. (Measured in seconds)");
-		System.out.println("2. Decathlon 400 meters. (Measured in seconds)");
-		System.out.println("3. Decathlon 110 meters hurdles. (Measured in seconds)");
-		System.out.println("4. Decathlon 1500 meters. (Measured in minutes and seconds)");
-		System.out.println("5. Decathlon Long Jump. (Measured in centimeters)");
-		System.out.println("6. Decathlon High Jump. (Measured in centimeters)");
-		System.out.println("7. Decathlon Pole Vault. (Measured in centimeters)");
-		System.out.println("8. Decathlon Discus Throw. (Measured in meters)");
-		System.out.println("9. Decathlon Javelin Throw. (Measured in meters)");
-		System.out.println("10. Decathlon Shot Put. (Measured in meters)");
+		System.out.println("1. Decathlon 100 meters.");
+		System.out.println("2. Decathlon 400 meters.");
+		System.out.println("3. Decathlon 110 meters hurdles.");
+		System.out.println("4. Decathlon 1500 meters.");
+		System.out.println("5. Decathlon Long Jump.");
+		System.out.println("6. Decathlon High Jump.");
+		System.out.println("7. Decathlon Pole Vault.");
+		System.out.println("8. Decathlon Discus Throw.");
+		System.out.println("9. Decathlon Javelin Throw.");
+		System.out.println("10. Decathlon Shot Put.");
 	}
 
 

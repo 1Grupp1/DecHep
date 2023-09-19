@@ -20,7 +20,7 @@ public class DecaHighJump {
 
 			try {
 				// Acceptable values.
-				if (distance < 0) {
+				if (distance < 77) {
 					System.out.println("Value too low");
 					distance = inputResult.enterResult();
 				} else if (distance > 300) {

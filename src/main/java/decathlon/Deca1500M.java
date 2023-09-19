@@ -23,7 +23,7 @@ public class Deca1500M {
 				if (runningTime < 120) {
 					System.out.println("Value too low");
 					runningTime = inputResult.enterResult();
-				} else if (runningTime > 475) {
+				} else if (runningTime > 474) {
 					System.out.println("Value too high");
 					runningTime = inputResult.enterResult();
 				} else {
