@@ -161,11 +161,11 @@ public class SelectDiscipline {
 				hep100MHurdles.calculateResult(inputResult.enterResult());
 				break;
 			case 4:
-				System.out.println("You have selected Hep High Jump, input your result in meter");
+				System.out.println("You have selected Hep High Jump, input your result in centimeter");
 				hepHighJump.calculateResult(inputResult.enterResult());
 				break;
 			case 5:
-				System.out.println("You have selected Hep Long Jump, input your result in meter");
+				System.out.println("You have selected Hep Long Jump, input your result in centimeter");
 				hepLongJump.calculateResult(inputResult.enterResult());
 				break;
 			case 6:
