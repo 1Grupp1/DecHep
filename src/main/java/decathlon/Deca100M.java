@@ -3,7 +3,7 @@ package decathlon;
 import common.*;
 
 public class Deca100M {
-
+//test
 	private int score;
 	private double A = 25.4347;
 	private double B = 18;
