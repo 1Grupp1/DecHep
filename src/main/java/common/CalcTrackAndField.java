@@ -14,6 +14,7 @@ public class CalcTrackAndField {
 	// Calculates height and distance for field discipline.
 	public int calculateField(double A, double B, double C, double distance) {
 		result = (int) (A * Math.pow((distance - B), C));
+		score=result;
 		return result;
 	}
 
