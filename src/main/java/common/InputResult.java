@@ -27,6 +27,7 @@ public class InputResult {
 			}
 
 		}
+		sc.close();		//Closing the scanner to prevent resource leak
 		return inputResult;
 	}
 
