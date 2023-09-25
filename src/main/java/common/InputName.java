@@ -31,6 +31,7 @@ public class InputName {
 			}
 
 		}
+			//Closing the scanner to prevent resource leak
 		return compName;
 	}
 }

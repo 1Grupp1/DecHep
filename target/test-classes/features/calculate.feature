@@ -53,7 +53,7 @@ Feature: Decathlon100M
     Then errormessage is shown <vaildnummbers>
     Examples:
       | discipline | result | score | vaildnummbers |
-      |            |        |       |               |
+      | "hhalk"    |        |       |               |
       |            |        |       |               |
       |            |        |       |               |
       |            |        |       |               |
