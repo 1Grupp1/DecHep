@@ -23,7 +23,7 @@ public class InputName {
 			System.out.println("Please enter the competitor's name:");
 			compName = sc.nextLine();
 			name=compName;
-			if (!compName.matches(".*[a-öA-ö]")) {
+			if (!compName.matches("^a-öA-ö\\s]+$")) {
 				System.out.println("Only use letters when putting in competitors name.");
 
 			} else {

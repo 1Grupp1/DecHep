@@ -134,7 +134,7 @@ public class SelectDiscipline {
 		String[] decHep2 = {"Hep 200M", "Hep 800M", "Hep 100M Hurdles", "Hep High Jump", "HepLongJump", "Hep Shot Put", "Hep Javelin Throw"};
 		decHep = decHep2[discipline - 1];
 
-		//  System.out.println(decHep);
+		  System.out.println(decHep);
 
 	}
 
@@ -143,7 +143,7 @@ public class SelectDiscipline {
 				, "Dec Discus Throw", "Deca Javelin Throw", "Deca Shot Put"};
 		decHep = decHep2[discipline - 1];
 
-		// System.out.println(decHep);
+		 System.out.println(decHep);
 
 	}
 
@@ -264,7 +264,7 @@ public class SelectDiscipline {
 
 	}
 
-	// Needs more stuff.
+
 	public void printDisciplinesHeptathlon() {
 		System.out.println("1. 200 meters");
 		System.out.println("2. 800 meters");
