@@ -19,7 +19,7 @@ public class Hep200M {
 
 			try {
 				// Acceptable values.
-				if (runningTime < 14) {
+				if (runningTime < 18) {
 					System.out.println("Value too low");
 					runningTime = inputResult.enterResult();
 				} else if (runningTime > 42.08) {
@@ -34,7 +34,7 @@ public class Hep200M {
 				System.out.println("Please enter numbers");
 			}
 		}
-		System.out.println("The result is " + score);
+		System.out.println("Your score is: " + score + " points");
 
 	}
 

@@ -20,10 +20,10 @@ public class DecaDiscusThrow {
 
 			try {
 				// Acceptable values.
-				if (distance < 0) {
+				if (distance < 4.1) {
 					System.out.println("Value too low");
 					distance = inputResult.enterResult();
-				} else if (distance > 85) {
+				} else if (distance > 76) {
 					System.out.println("Value too high");
 					distance = inputResult.enterResult();
 				} else {
@@ -36,7 +36,7 @@ public class DecaDiscusThrow {
 				System.out.println("Please enter numbers");
 			}
 		}
-		System.out.println("The result is: " + score);
+		System.out.println("Your score is: " + score + " points");
 
 	}
 

@@ -24,7 +24,7 @@ public class DecaPoleVault {
 					System.out.println("Value too low");
 					distance = inputResult.enterResult();
 
-				} else if (distance > 800) {
+				} else if (distance > 700) {
 
 					System.out.println("Value too high");
 					distance = inputResult.enterResult();
@@ -39,7 +39,7 @@ public class DecaPoleVault {
 				System.out.println("Please enter numbers");
 			}
 		}
-		System.out.println("The result is: " + score);
+		System.out.println("Your score is: " + score + " points");
 	}
 
 }
