@@ -19,7 +19,7 @@ public class Deca100M {
 
 			try {
 				// Acceptable values.
-				if (runningTime < 5) {
+				if (runningTime < 9) {
 					System.out.println("Value too low");
 					runningTime = inputResult.enterResult();
 				} else if (runningTime > 17.9) {
@@ -35,7 +35,7 @@ public class Deca100M {
 				System.out.println("Please enter numbers");
 			}
 		}
-		System.out.println("The result is " + score);
+		System.out.println("Your score is " + score + " points");
 
 	}
 

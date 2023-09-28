@@ -20,10 +20,10 @@ public class Deca400M {
 
 			try {
 				// Acceptable values.
-				if (runningTime < 30) {
+				if (runningTime < 42.5) {
 					System.out.println("Value too low");
 					runningTime = inputResult.enterResult();
-				} else if (runningTime > 100) {
+				} else if (runningTime > 81) {
 					System.out.println("Value too high");
 					runningTime = inputResult.enterResult();
 				} else {
@@ -36,7 +36,7 @@ public class Deca400M {
 				System.out.println("Please enter numbers");
 			}
 		}
-		System.out.println("The result is: " + score);
+		System.out.println("Your score is: " + score + " points");
 
 	}
 

@@ -20,7 +20,7 @@ public class Deca1500M {
 
 			try {
 				// Acceptable values.
-				if (runningTime < 120) {
+				if (runningTime < 180) {
 					System.out.println("Value too low");
 					runningTime = inputResult.enterResult();
 				} else if (runningTime > 474) {
@@ -36,7 +36,7 @@ public class Deca1500M {
 				System.out.println("Please enter numbers");
 			}
 		}
-		System.out.println("The result is: " + score);
+		System.out.println("Your score is: " + score + " points");
 
 	}
 

@@ -23,7 +23,7 @@ public class HeptShotPut {
 				if (distance < 1.53) {
 					System.out.println("Value too low");
 					distance = inputResult.enterResult();
-				} else if (distance > 40) {
+				} else if (distance > 25) {
 
 					System.out.println("Value too high");
 					distance = inputResult.enterResult();
@@ -38,7 +38,7 @@ public class HeptShotPut {
 				System.out.println("Please enter numbers");
 			}
 		}
-		System.out.println("The result is: " + score);
+		System.out.println("Your score is: " + score  + " points");
 	}
 
 }

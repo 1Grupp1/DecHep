@@ -37,7 +37,7 @@ public class DecaLongJump {
 				System.out.println("Please enter numbers");
 			}
 		}
-		System.out.println("The result is: " + score);
+		System.out.println("Your score is: " + score + " points");
 	}
 
 }

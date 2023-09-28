@@ -1,7 +1,7 @@
 Feature: Decathlon100M
   I want to use this template for my feature file
 
-  Scenario Outline: Deca100M
+  Scenario Outline: Track
     Given I have selected <discipline>
     And I enter the <result>
     Then I verify the <score>
@@ -46,7 +46,7 @@ Feature: Decathlon100M
       | Elin123       | Heptathlon | Invalid |
       | Elin?         | Heptathlon | Invalid |
 
-  Scenario Outline: Field
+   Scenario Outline: Field
     Given I have selected <discipline>
     And I enter the <result>
     Then I verify the <score>
@@ -62,5 +62,4 @@ Feature: Decathlon100M
       |            |        |       |               |
       |            |        |       |               |
       |            |        |       |               |
-
 

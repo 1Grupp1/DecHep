@@ -15,7 +15,8 @@ public class InputResult {
 		Scanner sc = new Scanner(System.in);
 		boolean active = true;
 		while (active) {
-			System.out.println("Please enter the result:");
+			System.out.println();
+			System.out.println("Please enter the result to calculate your score:");
 			try {
 
 				result = Double.parseDouble(sc.nextLine());
@@ -27,7 +28,7 @@ public class InputResult {
 			}
 
 		}
-		sc.close();		//Closing the scanner to prevent resource leak
+
 		return inputResult;
 	}
 
