@@ -71,6 +71,9 @@ public class Ground extends JFrame {
     private JTextField scoreDecaJavelinThrowPoints;
     private JTextField scoreDeca1500mPoints;
     private JTextField SCORETextField;
+    private JTextField POINTSTextField;
+    private JTextField SCORETextField2;
+    private JTextField POINTSTextField2;
 
     public Ground() {
         setContentPane(GroundPanel);

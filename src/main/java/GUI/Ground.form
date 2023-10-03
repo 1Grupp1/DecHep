@@ -3,12 +3,14 @@
   <grid id="27dc6" binding="GroundPanel" layout-manager="GridLayoutManager" row-count="15" column-count="10" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
     <margin top="0" left="0" bottom="0" right="0"/>
     <constraints>
-      <xy x="20" y="20" width="1074" height="733"/>
+      <xy x="20" y="20" width="1078" height="737"/>
     </constraints>
     <properties>
       <background color="-7489287"/>
     </properties>
-    <border type="none"/>
+    <border type="line" title-justification="2" title-position="2">
+      <color color="-16711423"/>
+    </border>
     <children>
       <component id="15a35" class="javax.swing.JTextField" binding="insertNameBox">
         <constraints>
@@ -30,6 +32,7 @@
         </constraints>
         <properties>
           <background color="-7489287"/>
+          <editable value="false"/>
           <font name="Comic Sans MS" size="20" style="1"/>
           <foreground color="-16514044"/>
           <text value="   Heptathlon"/>
@@ -43,6 +46,7 @@
         </constraints>
         <properties>
           <background color="-7489287"/>
+          <editable value="false"/>
           <font name="JetBrains Mono" style="3"/>
           <foreground color="-16711423"/>
           <text value="100 m Hurdles"/>
@@ -56,6 +60,7 @@
         </constraints>
         <properties>
           <background color="-7489287"/>
+          <editable value="false"/>
           <font name="JetBrains Mono" style="3"/>
           <foreground color="-16711423"/>
           <text value="High Jump"/>
@@ -69,6 +74,7 @@
         </constraints>
         <properties>
           <background color="-7489287"/>
+          <editable value="false"/>
           <font name="JetBrains Mono" style="3"/>
           <foreground color="-16711423"/>
           <text value="Shot Put"/>
@@ -82,6 +88,7 @@
         </constraints>
         <properties>
           <background color="-7489287"/>
+          <editable value="false"/>
           <font name="JetBrains Mono" style="3"/>
           <foreground color="-16711423"/>
           <text value="200 m"/>
@@ -95,6 +102,7 @@
         </constraints>
         <properties>
           <background color="-7489287"/>
+          <editable value="false"/>
           <font name="JetBrains Mono" style="3"/>
           <foreground color="-16711423"/>
           <text value="Long Jump"/>
@@ -108,6 +116,7 @@
         </constraints>
         <properties>
           <background color="-7489287"/>
+          <editable value="false"/>
           <font name="JetBrains Mono" style="3"/>
           <foreground color="-16711423"/>
           <text value="Javelin Throw"/>
@@ -121,6 +130,7 @@
         </constraints>
         <properties>
           <background color="-7489287"/>
+          <editable value="false"/>
           <font name="JetBrains Mono" style="3"/>
           <foreground color="-16711423"/>
           <text value="800 m"/>
@@ -215,6 +225,7 @@
         </constraints>
         <properties>
           <background color="-7489287"/>
+          <editable value="false"/>
           <font name="Comic Sans MS" size="20" style="1"/>
           <foreground color="-16711423"/>
           <text value="   Decathlon"/>
@@ -228,6 +239,7 @@
         </constraints>
         <properties>
           <background color="-7489287"/>
+          <editable value="false"/>
           <font name="JetBrains Mono" style="3"/>
           <foreground color="-16711423"/>
           <text value="Shot Put"/>
@@ -241,6 +253,7 @@
         </constraints>
         <properties>
           <background color="-7489287"/>
+          <editable value="false"/>
           <font name="JetBrains Mono" style="3"/>
           <foreground color="-16711423"/>
           <text value="High Jump"/>
@@ -254,6 +267,7 @@
         </constraints>
         <properties>
           <background color="-7489287"/>
+          <editable value="false"/>
           <font name="JetBrains Mono" style="3"/>
           <foreground color="-16711423"/>
           <text value="400 m"/>
@@ -267,6 +281,7 @@
         </constraints>
         <properties>
           <background color="-7489287"/>
+          <editable value="false"/>
           <font name="JetBrains Mono" style="3"/>
           <foreground color="-16711423"/>
           <text value="110 m Hurdles"/>
@@ -280,6 +295,7 @@
         </constraints>
         <properties>
           <background color="-7489287"/>
+          <editable value="false"/>
           <font name="JetBrains Mono" style="3"/>
           <foreground color="-16711423"/>
           <text value="Discus Throw"/>
@@ -293,6 +309,7 @@
         </constraints>
         <properties>
           <background color="-7489287"/>
+          <editable value="false"/>
           <font name="JetBrains Mono" style="3"/>
           <foreground color="-16711423"/>
           <text value="Pole Vault"/>
@@ -306,6 +323,7 @@
         </constraints>
         <properties>
           <background color="-7489287"/>
+          <editable value="false"/>
           <font name="JetBrains Mono" style="3"/>
           <foreground color="-16711423"/>
           <text value="Javelin Throw"/>
@@ -319,6 +337,7 @@
         </constraints>
         <properties>
           <background color="-7489287"/>
+          <editable value="false"/>
           <font name="JetBrains Mono" style="3"/>
           <foreground color="-16711423"/>
           <text value="1500 m"/>
@@ -465,6 +484,7 @@
         </constraints>
         <properties>
           <background color="-7489287"/>
+          <editable value="false"/>
           <font size="12" style="1"/>
           <foreground color="-16514044"/>
           <text value="Please insert competitors name:"/>
@@ -510,6 +530,7 @@
         </constraints>
         <properties>
           <background color="-7489287"/>
+          <editable value="false"/>
           <font style="1"/>
           <foreground color="-16711423"/>
           <horizontalAlignment value="0"/>
@@ -523,6 +544,7 @@
         </constraints>
         <properties>
           <background color="-7489287"/>
+          <editable value="false"/>
           <font style="1"/>
           <foreground color="-16711423"/>
           <horizontalAlignment value="0"/>
@@ -537,6 +559,7 @@
         </constraints>
         <properties>
           <background color="-7489287"/>
+          <editable value="false"/>
           <font style="1"/>
           <foreground color="-16711423"/>
           <horizontalAlignment value="0"/>
@@ -551,6 +574,7 @@
         </constraints>
         <properties>
           <background color="-7489287"/>
+          <editable value="false"/>
           <font style="1"/>
           <foreground color="-16711423"/>
           <horizontalAlignment value="0"/>
@@ -565,6 +589,7 @@
         </constraints>
         <properties>
           <background color="-7489287"/>
+          <editable value="false"/>
           <font style="1"/>
           <foreground color="-16711423"/>
           <horizontalAlignment value="0"/>
@@ -579,6 +604,7 @@
         </constraints>
         <properties>
           <background color="-7489287"/>
+          <editable value="false"/>
           <font style="1"/>
           <foreground color="-16711423"/>
           <horizontalAlignment value="0"/>
@@ -593,6 +619,7 @@
         </constraints>
         <properties>
           <background color="-7489287"/>
+          <editable value="false"/>
           <font style="1"/>
           <foreground color="-16711423"/>
           <horizontalAlignment value="0"/>
@@ -607,6 +634,7 @@
         </constraints>
         <properties>
           <background color="-7489287"/>
+          <editable value="false"/>
           <font style="1"/>
           <foreground color="-16711423"/>
           <horizontalAlignment value="0"/>
@@ -620,6 +648,7 @@
         </constraints>
         <properties>
           <background color="-7489287"/>
+          <editable value="false"/>
           <font style="1"/>
           <foreground color="-16711423"/>
           <horizontalAlignment value="0"/>
@@ -633,6 +662,7 @@
         </constraints>
         <properties>
           <background color="-7489287"/>
+          <editable value="false"/>
           <font style="1"/>
           <foreground color="-16711423"/>
           <horizontalAlignment value="0"/>
@@ -646,6 +676,7 @@
         </constraints>
         <properties>
           <background color="-7489287"/>
+          <editable value="false"/>
           <font style="1"/>
           <foreground color="-16711423"/>
           <horizontalAlignment value="0"/>
@@ -660,6 +691,7 @@
         </constraints>
         <properties>
           <background color="-7489287"/>
+          <editable value="false"/>
           <font style="1"/>
           <foreground color="-16711423"/>
           <horizontalAlignment value="0"/>
@@ -673,6 +705,7 @@
         </constraints>
         <properties>
           <background color="-7489287"/>
+          <editable value="false"/>
           <font style="1"/>
           <foreground color="-16711423"/>
           <horizontalAlignment value="0"/>
@@ -686,6 +719,7 @@
         </constraints>
         <properties>
           <background color="-7489287"/>
+          <editable value="false"/>
           <font style="1"/>
           <foreground color="-16711423"/>
           <horizontalAlignment value="0"/>
@@ -699,6 +733,7 @@
         </constraints>
         <properties>
           <background color="-7489287"/>
+          <editable value="false"/>
           <font style="1"/>
           <foreground color="-16711423"/>
           <horizontalAlignment value="0"/>
@@ -712,6 +747,7 @@
         </constraints>
         <properties>
           <background color="-7489287"/>
+          <editable value="false"/>
           <font style="1"/>
           <foreground color="-16711423"/>
           <horizontalAlignment value="0"/>
@@ -734,6 +770,7 @@
         </constraints>
         <properties>
           <background color="-7489287"/>
+          <editable value="false"/>
           <font size="12" style="1"/>
           <foreground color="-16514044"/>
           <text value="          Total Points:"/>
@@ -747,6 +784,7 @@
         </constraints>
         <properties>
           <background color="-1910583"/>
+          <editable value="false"/>
           <font name="Lucida Console" size="16" style="1"/>
           <horizontalAlignment value="0"/>
         </properties>
@@ -759,6 +797,7 @@
         </constraints>
         <properties>
           <background color="-7489287"/>
+          <editable value="false"/>
           <font style="1"/>
           <foreground color="-16711423"/>
           <horizontalAlignment value="0"/>
@@ -792,6 +831,7 @@
         </constraints>
         <properties>
           <background color="-7489287"/>
+          <editable value="false"/>
           <font name="JetBrains Mono" style="3"/>
           <foreground color="-16711423"/>
           <text value="Long Jump"/>
@@ -853,7 +893,8 @@
         </constraints>
         <properties>
           <background color="-7489287"/>
-          <editable value="true"/>
+          <columns value="0"/>
+          <editable value="false"/>
           <enabled value="true"/>
           <font name="Comic Sans MS" style="1"/>
           <foreground color="-16711423"/>
@@ -861,7 +902,7 @@
           <text value="SCORE"/>
         </properties>
       </component>
-      <component id="688e5" class="javax.swing.JTextField" default-binding="true">
+      <component id="688e5" class="javax.swing.JTextField" binding="POINTSTextField">
         <constraints>
           <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
@@ -869,13 +910,14 @@
         </constraints>
         <properties>
           <background color="-7489287"/>
+          <editable value="false"/>
           <font name="Comic Sans MS" style="1"/>
           <foreground color="-16711423"/>
           <horizontalAlignment value="0"/>
           <text value="POINTS"/>
         </properties>
       </component>
-      <component id="b7f63" class="javax.swing.JTextField" default-binding="true">
+      <component id="b7f63" class="javax.swing.JTextField" binding="SCORETextField2">
         <constraints>
           <grid row="3" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
@@ -883,6 +925,7 @@
         </constraints>
         <properties>
           <background color="-7489287"/>
+          <editable value="false"/>
           <font name="Comic Sans MS" style="1"/>
           <foreground color="-16711423"/>
           <horizontalAlignment value="0"/>
@@ -897,12 +940,13 @@
         </constraints>
         <properties>
           <background color="-7489287"/>
+          <editable value="false"/>
           <font name="JetBrains Mono" style="3"/>
           <foreground color="-16711423"/>
           <text value="100 m"/>
         </properties>
       </component>
-      <component id="d0708" class="javax.swing.JTextField" default-binding="true">
+      <component id="d0708" class="javax.swing.JTextField" binding="POINTSTextField2">
         <constraints>
           <grid row="3" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
@@ -910,6 +954,7 @@
         </constraints>
         <properties>
           <background color="-7489287"/>
+          <editable value="false"/>
           <font name="Comic Sans MS" style="1"/>
           <foreground color="-16711423"/>
           <horizontalAlignment value="0"/>
