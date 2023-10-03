@@ -2,6 +2,7 @@ package GUI;
 
 import heptathlon.Hep100MHurdles;
 import heptathlon.Hep200M;
+import heptathlon.HeptHightJump;
 
 import javax.swing.*;
 import javax.swing.event.DocumentEvent;
@@ -73,7 +74,7 @@ public class Ground extends JFrame {
     private JTextField scoreDecaJavelinThrowPoints;
     private JTextField scoreDeca1500mPoints;
 
-    public Ground () {
+    public Ground() {
         setContentPane(GroundPanel);
         setTitle("Heptathlon and Decathlon GUI");
         setDefaultCloseOperation(EXIT_ON_CLOSE);
@@ -102,6 +103,22 @@ public class Ground extends JFrame {
                 hep100MHurdles.calculateResult(runningTime);
                 int score = hep100MHurdles.getScore();
                 scoreHep100mHurdlesPoints.setText(String.format("%d", score));
+            }
+        });
+        scoreHepHighJump.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                double distance = 0;
+                try {
+                    distance = Double.parseDouble(scoreHepHighJump.getText());
+                } catch (NumberFormatException ex) {
+                    JOptionPane.showMessageDialog(null, "Please enter a valid number");
+                    return;
+                }
+                HeptHightJump heptHightJump = new HeptHightJump();
+                heptHightJump.calculateResult(distance);
+                int score = heptHightJump.getScore();
+                scoreHepHighJumpPoints.setText(String.format("%d", score));
             }
         });
     }
