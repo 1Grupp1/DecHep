@@ -5,9 +5,9 @@ import common.*;
 public class DecaLongJump {
 
 	private int score;
-	private double A = 0.14354;
-	private double B = 220;
-	private double C = 1.4;
+	private final double A = 0.14354;
+	private final double B = 220;
+	private final double C = 1.4;
 	boolean active = true;
 	CalcTrackAndField calc = new CalcTrackAndField();
 	InputResult inputResult = new InputResult();
@@ -39,5 +39,7 @@ public class DecaLongJump {
 		}
 		System.out.println("Your score is: " + score + " points");
 	}
-
+	public int getScore() {
+		return score;
+	}
 }

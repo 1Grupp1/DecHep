@@ -1,5 +1,6 @@
 package GUI;
 
+import decathlon.*;
 import heptathlon.*;
 
 import javax.swing.*;
@@ -197,6 +198,166 @@ public class Ground extends JFrame {
                 hep800M.calculateResult(runningTime);
                 int score = hep800M.getScore();
                 scoreHep800mPoints.setText(String.format("%d", score));
+            }
+        });
+        scoreDeca100m.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                double runningTime = 0;
+                try {
+                    runningTime = Double.parseDouble(scoreDeca100m.getText());
+                } catch (NumberFormatException ex) {
+                    JOptionPane.showMessageDialog(null, "Please enter a valid number");
+                    return;
+                }
+                Deca100M deca100M = new Deca100M();
+                deca100M.calculateResult(runningTime);
+                int score = deca100M.getScore();
+                scoreDeca100mPoints.setText(String.format("%d", score));
+            }
+        });
+        scoreDecaLongJump.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                double distance = 0;
+                try {
+                    distance = Double.parseDouble(scoreDecaLongJump.getText());
+                } catch (NumberFormatException ex) {
+                    JOptionPane.showMessageDialog(null, "Please enter a valid number");
+                    return;
+                }
+                DecaLongJump decaLongJump = new DecaLongJump();
+                decaLongJump.calculateResult(distance);
+                int score = decaLongJump.getScore();
+                scoreDecaLongJumpPoints.setText(String.format("%d", score));
+            }
+        });
+        scoreDecaShotPut.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                double distance = 0;
+                try {
+                    distance = Double.parseDouble(scoreDecaShotPut.getText());
+                } catch (NumberFormatException ex) {
+                    JOptionPane.showMessageDialog(null, "Please enter a valid number");
+                    return;
+                }
+                DecaShotPut decaShotPut = new DecaShotPut();
+                decaShotPut.calculateResult(distance);
+                int score = decaShotPut.getScore();
+                scoreDecaShotPutPoints.setText(String.format("%d", score));
+            }
+        });
+        scoreDecaHighJump.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                double distance = 0;
+                try {
+                    distance = Double.parseDouble(scoreDecaHighJump.getText());
+                } catch (NumberFormatException ex) {
+                    JOptionPane.showMessageDialog(null, "Please enter a valid number");
+                    return;
+                }
+                DecaLongJump decaLongJump = new DecaLongJump();
+                decaLongJump.calculateResult(distance);
+                int score = decaLongJump.getScore();
+                scoreDecaHighJumpPoints.setText(String.format("%d", score));
+            }
+        });
+        scoreDeca400m.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                double runningTime = 0;
+                try {
+                    runningTime = Double.parseDouble(scoreDeca400m.getText());
+                } catch (NumberFormatException ex) {
+                    JOptionPane.showMessageDialog(null, "Please enter a valid number");
+                    return;
+                }
+                Deca100M deca100M = new Deca100M();
+                deca100M.calculateResult(runningTime);
+                int score = deca100M.getScore();
+                scoreDeca400mPoints.setText(String.format("%d", score));
+            }
+        });
+        scoreDeca110mHurdles.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                double runningTime = 0;
+                try {
+                    runningTime = Double.parseDouble(scoreDeca110mHurdles.getText());
+                } catch (NumberFormatException ex) {
+                    JOptionPane.showMessageDialog(null, "Please enter a valid number");
+                    return;
+                }
+                Deca110MHurdles deca110MHurdles = new Deca110MHurdles();
+                deca110MHurdles.calculateResult(runningTime);
+                int score = deca110MHurdles.getScore();
+                scoreDeca110mHurdlesPoints.setText(String.format("%d", score));
+            }
+        });
+        scoreDecaDiscusThrow.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                double distance = 0;
+                try {
+                    distance = Double.parseDouble(scoreDecaDiscusThrow.getText());
+                } catch (NumberFormatException ex) {
+                    JOptionPane.showMessageDialog(null, "Please enter a valid number");
+                    return;
+                }
+                DecaDiscusThrow decaDiscusThrow = new DecaDiscusThrow();
+                decaDiscusThrow.calculateResult(distance);
+                int score = decaDiscusThrow.getScore();
+                scoreDecaDiscusThrowPoints.setText(String.format("%d", score));
+            }
+        });
+        scoreDecaPoleVault.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                double distance = 0;
+                try {
+                    distance = Double.parseDouble(scoreDecaPoleVault.getText());
+                } catch (NumberFormatException ex) {
+                    JOptionPane.showMessageDialog(null, "Please enter a valid number");
+                    return;
+                }
+                DecaPoleVault decaPoleVault = new DecaPoleVault();
+                decaPoleVault.calculateResult(distance);
+                int score = decaPoleVault.getScore();
+                scoreDecaPoleVaultPoints.setText(String.format("%d", score));
+            }
+        });
+        scoreDecaJavelinThrow.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                double distance = 0;
+                try {
+                    distance = Double.parseDouble(scoreDecaJavelinThrow.getText());
+                } catch (NumberFormatException ex) {
+                    JOptionPane.showMessageDialog(null, "Please enter a valid number");
+                    return;
+                }
+                DecaJavelinThrow decaJavelinThrow = new DecaJavelinThrow();
+                decaJavelinThrow.calculateResult(distance);
+                int score = decaJavelinThrow.getScore();
+                scoreDecaJavelinThrowPoints.setText(String.format("%d", score));
+            }
+        });
+        scoreDeca1500m.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                double runningTime = 0;
+                try {
+                    runningTime = Double.parseDouble(scoreDeca1500m.getText());
+                } catch (NumberFormatException ex) {
+                    JOptionPane.showMessageDialog(null, "Please enter a valid number");
+                    return;
+                }
+                Deca1500M deca1500M = new Deca1500M();
+                deca1500M.calculateResult(runningTime);
+                int score = deca1500M.getScore();
+                scoreDeca1500mPoints.setText(String.format("%d", score));
             }
         });
     }
