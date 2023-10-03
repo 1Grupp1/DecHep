@@ -1,7 +1,7 @@
 package GUI;
 
-import heptathlon.Hep100MHurdles;
-import heptathlon.HeptHightJump;
+import decathlon.*;
+import heptathlon.*;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -122,7 +122,7 @@ public class Ground extends JFrame {
                 scoreHepHighJumpPoints.setText(String.format("%d", score));
             }
         });
-<<<<<<< HEAD
+//<<<<<<< HEAD
         scoreHepShotPut.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -393,8 +393,8 @@ public class Ground extends JFrame {
                 totalPointsBox.setText(String.format("%d", totalPoints));
             }
         });
-=======
->>>>>>> origin/master
+//=======
+//>>>>>>> origin/master
     }
 
     public static void main(String[] args) {
