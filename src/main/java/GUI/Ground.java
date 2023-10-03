@@ -1,11 +1,9 @@
 package GUI;
 
-import decathlon.*;
-import heptathlon.*;
+import heptathlon.Hep100MHurdles;
+import heptathlon.HeptHightJump;
 
 import javax.swing.*;
-import javax.swing.event.DocumentEvent;
-import javax.swing.event.DocumentListener;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -72,6 +70,10 @@ public class Ground extends JFrame {
     private JTextField scoreDecaPoleVaultPoints;
     private JTextField scoreDecaJavelinThrowPoints;
     private JTextField scoreDeca1500mPoints;
+    private JTextField SCORETextField;
+    private JTextField POINTSTextField;
+    private JTextField SCORETextField2;
+    private JTextField POINTSTextField2;
 
     public Ground() {
         setContentPane(GroundPanel);
@@ -120,6 +122,7 @@ public class Ground extends JFrame {
                 scoreHepHighJumpPoints.setText(String.format("%d", score));
             }
         });
+<<<<<<< HEAD
         scoreHepShotPut.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -390,6 +393,8 @@ public class Ground extends JFrame {
                 totalPointsBox.setText(String.format("%d", totalPoints));
             }
         });
+=======
+>>>>>>> origin/master
     }
 
     public static void main(String[] args) {
