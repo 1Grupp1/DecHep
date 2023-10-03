@@ -1,12 +1,9 @@
 package GUI;
 
 import heptathlon.Hep100MHurdles;
-import heptathlon.Hep200M;
 import heptathlon.HeptHightJump;
 
 import javax.swing.*;
-import javax.swing.event.DocumentEvent;
-import javax.swing.event.DocumentListener;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -73,6 +70,7 @@ public class Ground extends JFrame {
     private JTextField scoreDecaPoleVaultPoints;
     private JTextField scoreDecaJavelinThrowPoints;
     private JTextField scoreDeca1500mPoints;
+    private JTextField SCORETextField;
 
     public Ground() {
         setContentPane(GroundPanel);
