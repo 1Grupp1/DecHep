@@ -1,8 +1,6 @@
 package GUI;
 
-import heptathlon.Hep100MHurdles;
-import heptathlon.Hep200M;
-import heptathlon.HeptHightJump;
+import heptathlon.*;
 
 import javax.swing.*;
 import javax.swing.event.DocumentEvent;
@@ -119,6 +117,86 @@ public class Ground extends JFrame {
                 heptHightJump.calculateResult(distance);
                 int score = heptHightJump.getScore();
                 scoreHepHighJumpPoints.setText(String.format("%d", score));
+            }
+        });
+        scoreHepShotPut.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                double distance = 0;
+                try {
+                    distance = Double.parseDouble(scoreHepShotPut.getText());
+                } catch (NumberFormatException ex) {
+                    JOptionPane.showMessageDialog(null, "Please enter a valid number");
+                    return;
+                }
+                HeptShotPut heptShotPut = new HeptShotPut();
+                heptShotPut.calculateResult(distance);
+                int score = heptShotPut.getScore();
+                scoreHepShotPutPoints.setText(String.format("%d", score));
+            }
+        });
+        scoreHep200m.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                double runningTime = 0;
+                try {
+                    runningTime = Double.parseDouble(scoreHep200m.getText());
+                } catch (NumberFormatException ex) {
+                    JOptionPane.showMessageDialog(null, "Please enter a valid number");
+                    return;
+                }
+                Hep200M hep200M = new Hep200M();
+                hep200M.calculateResult(runningTime);
+                int score = hep200M.getScore();
+                scoreHep200mPoints.setText(String.format("%d", score));
+            }
+        });
+        scoreHepLongJump.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                double distance = 0;
+                try {
+                    distance = Double.parseDouble(scoreHepLongJump.getText());
+                } catch (NumberFormatException ex) {
+                    JOptionPane.showMessageDialog(null, "Please enter a valid number");
+                    return;
+                }
+                HeptHightJump heptHightJump = new HeptHightJump();
+                heptHightJump.calculateResult(distance);
+                int score = heptHightJump.getScore();
+                scoreHepLongJumpPoints.setText(String.format("%d", score));
+            }
+        });
+        scoreHepJavelinThrow.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                double distance = 0;
+                try {
+                    distance = Double.parseDouble(scoreHepJavelinThrow.getText());
+                } catch (NumberFormatException ex) {
+                    JOptionPane.showMessageDialog(null, "Please enter a valid number");
+                    return;
+                }
+                HeptJavelinThrow heptJavelinThrow = new HeptJavelinThrow();
+                heptJavelinThrow.calculateResult(distance);
+                int score = heptJavelinThrow.getScore();
+                scoreHepJavelinThrowPoints.setText(String.format("%d", score));
+            }
+        });
+        scoreHep800m.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                double runningTime = 0;
+                try {
+                    runningTime = Double.parseDouble(scoreHep800m.getText());
+                } catch (NumberFormatException ex) {
+                    JOptionPane.showMessageDialog(null, "Please enter a valid number");
+                    return;
+                }
+                Hep800M hep800M = new Hep800M();
+                hep800M.calculateResult(runningTime);
+                int score = hep800M.getScore();
+                scoreHep800mPoints.setText(String.format("%d", score));
             }
         });
     }
