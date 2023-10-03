@@ -360,6 +360,36 @@ public class Ground extends JFrame {
                 scoreDeca1500mPoints.setText(String.format("%d", score));
             }
         });
+        buttonCalculate.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                int totalPoints = 0;
+                try {
+                    int score1 = scoreHepShotPutPoints.getText().isEmpty() ? 0 : Integer.parseInt(scoreHepShotPutPoints.getText());
+                    int score2 = scoreHep100mHurdlesPoints.getText().isEmpty() ? 0 : Integer.parseInt(scoreHep100mHurdlesPoints.getText());
+                    int score3 = scoreHepHighJumpPoints.getText().isEmpty() ? 0 : Integer.parseInt(scoreHepHighJumpPoints.getText());
+                    int score4 = scoreHep200mPoints.getText().isEmpty() ? 0 : Integer.parseInt(scoreHep200mPoints.getText());
+                    int score5 = scoreHepLongJumpPoints.getText().isEmpty() ? 0 : Integer.parseInt(scoreHepLongJumpPoints.getText());
+                    int score6 = scoreHepJavelinThrowPoints.getText().isEmpty() ? 0 : Integer.parseInt(scoreHepJavelinThrowPoints.getText());
+                    int score7 = scoreHep800mPoints.getText().isEmpty() ? 0 : Integer.parseInt(scoreHep800mPoints.getText());
+                    int score8 = scoreDeca100mPoints.getText().isEmpty() ? 0 : Integer.parseInt(scoreDeca100mPoints.getText());
+                    int score9 = scoreDecaLongJumpPoints.getText().isEmpty() ? 0 : Integer.parseInt(scoreDecaLongJumpPoints.getText());
+                    int score10 = scoreDecaShotPutPoints.getText().isEmpty() ? 0 : Integer.parseInt(scoreDecaShotPutPoints.getText());
+                    int score11 = scoreDecaHighJumpPoints.getText().isEmpty() ? 0 : Integer.parseInt(scoreDecaHighJumpPoints.getText());
+                    int score12 = scoreDeca400mPoints.getText().isEmpty() ? 0 : Integer.parseInt(scoreDeca400mPoints.getText());
+                    int score13 = scoreDeca110mHurdlesPoints.getText().isEmpty() ? 0 : Integer.parseInt(scoreDeca110mHurdlesPoints.getText());
+                    int score14 = scoreDecaDiscusThrowPoints.getText().isEmpty() ? 0 : Integer.parseInt(scoreDecaDiscusThrowPoints.getText());
+                    int score15 = scoreDecaPoleVaultPoints.getText().isEmpty() ? 0 : Integer.parseInt(scoreDecaPoleVaultPoints.getText());
+                    int score16 = scoreDecaJavelinThrowPoints.getText().isEmpty() ? 0 : Integer.parseInt(scoreDecaJavelinThrowPoints.getText());
+                    int score17 = scoreDeca1500mPoints.getText().isEmpty() ? 0 : Integer.parseInt(scoreDeca1500mPoints.getText());
+                    totalPoints = score1 + score2 + score3 + score4 + score5 + score6 + score7 + score8 + score9 + score10 + score11 + score12 + score13 + score14 + score15 + score16 + score17;
+                } catch (NumberFormatException ex) {
+                    JOptionPane.showMessageDialog(null, "Please enter valid numbers in all fields");
+                    return;
+                }
+                totalPointsBox.setText(String.format("%d", totalPoints));
+            }
+        });
     }
 
     public static void main(String[] args) {
