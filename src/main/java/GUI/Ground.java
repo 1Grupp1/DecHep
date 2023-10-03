@@ -393,8 +393,7 @@ public class Ground extends JFrame {
                 totalPointsBox.setText(String.format("%d", totalPoints));
             }
         });
-//=======
-//>>>>>>> origin/master
+
     }
 
     public static void main(String[] args) {
