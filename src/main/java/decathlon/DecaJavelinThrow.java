@@ -6,9 +6,9 @@ import common.InputResult;
 public class DecaJavelinThrow {
 
 	private int score;
-	private double A = 10.14;
-	private double B = 7;
-	private double C = 1.08;
+	private final double A = 10.14;
+	private final double B = 7;
+	private final double C = 1.08;
 	boolean active = true;
 	CalcTrackAndField calc = new CalcTrackAndField();
 	InputResult inputResult = new InputResult();
@@ -40,5 +40,7 @@ public class DecaJavelinThrow {
 		System.out.println("The result is: " + score);
 
 	}
-
+	public int getScore() {
+		return score;
+	}
 }

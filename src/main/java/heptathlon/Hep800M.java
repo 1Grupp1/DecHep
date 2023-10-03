@@ -38,5 +38,7 @@ public class Hep800M {
 		System.out.println("Your score is: " + score + " points");
 
 	}
-
+	public int getScore() {
+		return score;
+	}
 }

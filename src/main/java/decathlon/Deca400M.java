@@ -5,9 +5,9 @@ import common.*;
 public class Deca400M {
 
 	private int score;
-	private double A = 1.53775;
-	private double B = 82;
-	private double C = 1.81;
+	private final double A = 1.53775;
+	private final double B = 82;
+	private final double C = 1.81;
 	boolean active = true;
 
 	CalcTrackAndField calc = new CalcTrackAndField();
@@ -39,5 +39,7 @@ public class Deca400M {
 		System.out.println("Your score is: " + score + " points");
 
 	}
-
+	public int getScore() {
+		return score;
+	}
 }

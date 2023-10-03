@@ -6,9 +6,9 @@ import common.InputResult;
 public class DecaHighJump {
 
 	private int score;
-	private double A = 0.8465;
-	private double B = 75;
-	private double C = 1.42;
+	private final double A = 0.8465;
+	private final double B = 75;
+	private final double C = 1.42;
 	boolean active = true;
 	CalcTrackAndField calc = new CalcTrackAndField();
 	InputResult inputResult = new InputResult();
@@ -39,5 +39,7 @@ public class DecaHighJump {
 		System.out.println("Your score is: " + score + " points");
 
 	}
-
+	public int getScore() {
+		return score;
+	}
 }

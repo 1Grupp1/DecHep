@@ -6,9 +6,9 @@ import common.InputResult;
 public class DecaShotPut {
 
 	private int score;
-	private double A = 51.39;
-	private double B = 1.5;
-	private double C = 1.05;
+	private final double A = 51.39;
+	private final double B = 1.5;
+	private final double C = 1.05;
 	boolean active = true;
 	CalcTrackAndField calc = new CalcTrackAndField();
 	InputResult inputResult = new InputResult();
@@ -40,5 +40,7 @@ public class DecaShotPut {
 		System.out.println("Your score is: " + score + " points");
 
 	}
-
+	public int getScore() {
+		return score;
+	}
 }

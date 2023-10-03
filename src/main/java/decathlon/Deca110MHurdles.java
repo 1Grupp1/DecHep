@@ -5,9 +5,9 @@ import common.*;
 public class Deca110MHurdles {
 
 	private int score;
-	private double A = 5.74352;
-	private double B = 28.5;
-	private double C = 1.92;
+	private final double A = 5.74352;
+	private final double B = 28.5;
+	private final double C = 1.92;
 	boolean active = true;
 	CalcTrackAndField calc = new CalcTrackAndField();
 	InputResult inputResult = new InputResult();
@@ -37,5 +37,7 @@ public class Deca110MHurdles {
 		System.out.println("Your score is " + score + " points");
 
 	}
-
+	public int getScore() {
+		return score;
+	}
 }
