@@ -96,8 +96,11 @@ public class Ground extends JFrame {
                 double runningTime = 0;
                 try {
                     runningTime = Double.parseDouble(scoreHep100mHurdles.getText());
+                    if (runningTime < 11 || runningTime > 26.4) {
+                        throw new NumberFormatException();
+                    }
                 } catch (NumberFormatException ex) {
-                    JOptionPane.showMessageDialog(null, "Please enter a valid number");
+                    JOptionPane.showMessageDialog(null, "Please enter a valid number between 11 and 26.4 seconds");
                     return;
                 }
                 Hep100MHurdles hep100MHurdles = new Hep100MHurdles();
