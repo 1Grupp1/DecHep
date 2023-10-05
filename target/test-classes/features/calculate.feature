@@ -46,20 +46,42 @@ Feature: Decathlon100M
       | Elin123       | Heptathlon | Invalid |
       | Elin?         | Heptathlon | Invalid |
 
-   Scenario Outline: Field
-    Given I have selected <discipline>
-    And I enter the <result>
-    Then I verify the <score>
-    Then errormessage is shown <vaildnummbers>
+  Scenario Outline: Field
+    Given I choose selected <gren>
+    And I type the <resultat>
+    Then I control the <points>
+    Then <validnumbers> is shown
     Examples:
-      | discipline | result | score | vaildnummbers |
-      | "hhalk"    |        |       |               |
-      |            |        |       |               |
-      |            |        |       |               |
-      |            |        |       |               |
-      |            |        |       |               |
-      |            |        |       |               |
-      |            |        |       |               |
-      |            |        |       |               |
-      |            |        |       |               |
+      | gren               | resultat | points | validnumbers   |
+      | "DecaDiscusThrow"  | 57       | 1017   | "Yes"          |
+      | "DecaDiscusThrow"  | 88       | 1689   | "To far throw" |
+      | "DecaDiscusThrow"  | 0        | 0      | "No points"    |
+      | "DecaHighJump"     | 200      | 803    | "Yes"          |
+      | "DecaHighJump"     | 270      | 1511   | "To high jump" |
+      | "DecaHighJump"     | 50       | 0      | "No points"    |
+      | "DecaJavelinThrow" | 60       | 738    | "Yes"          |
+      | "DecaJavelinThrow" | 95       | 1276   | "To far throw" |
+      | "DecaJavelinThrow" | 7        | 0      | "No points"    |
+      | "DecaLongJump"     | 400      | 206    | "Yes"          |
+      | "DecaLongJump"     | 1050     | 1752   | "To long jump" |
+      | "DecaLongJump"     | 190      | 0      | "No points"    |
+      | "DecaPoleVault"    | 490      | 880    | "Yes"          |
+      | "DecaPoleVault"    | 710      | 1610   | "To high jump" |
+      | "DecaPoleVault"    | 100      | 0      | "No points"    |
+      | "DecaShotPut"      | 4        | 134    | "Yes"          |
+      | "DecaShotPut"      | 28       | 1604   | "To far throw" |
+      | "DecaShotPut"      | 1        | 0      | "No points"    |
+      | "HeptHighJump"     | 120      | 312    | "Yes"          |
+      | "HeptHighJump"     | 288      | 2539   | "To high jump" |
+      | "HeptHighJump"     | 55       | 0      | "No points"    |
+      | "HeptJavelinThrow" | 41       | 686    | "Yes"          |
+      | "HeptJavelinThrow" | 99       | 1825   | "To far throw" |
+      | "HeptJavelinThrow" | 3        | 0      | "No points"    |
+      | "HeptLongJump"     | 455      | 441    | "Yes"          |
+      | "HeptLongJump"     | 1022     | 2390   | "To long jump" |
+      | "HeptLongJump"     | 213      | 0      | "No points"    |
+      | "HeptShotPut"      | 12       | 661    | "Yes"          |
+      | "HeptShotPut"      | 26       | 1610   | "To far throw" |
+      | "HeptShotPut"      | 1        | 0      | "No points"    |
+
 
