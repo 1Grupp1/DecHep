@@ -115,8 +115,11 @@ public class Ground extends JFrame {
                 double distance = 0;
                 try {
                     distance = Double.parseDouble(scoreHepHighJump.getText());
+                    if (distance < 75.5 || distance > 260) {
+                        throw new NumberFormatException();
+                    }
                 } catch (NumberFormatException ex) {
-                    JOptionPane.showMessageDialog(null, "Please enter a valid number");
+                    JOptionPane.showMessageDialog(null, "Please enter a valid number between 75.5 and 260 centimeters");
                     return;
                 }
                 HeptHightJump heptHightJump = new HeptHightJump();
@@ -131,9 +134,12 @@ public class Ground extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 double distance = 0;
                 try {
-                    distance = Double.parseDouble(scoreHepShotPut.getText());
+                    distance = Double.parseDouble(scoreHepShotPut.getText());                    if (distance < 1.53 || distance > 25) {
+                        throw new NumberFormatException();
+                    }
                 } catch (NumberFormatException ex) {
-                    JOptionPane.showMessageDialog(null, "Please enter a valid number");
+                    JOptionPane.showMessageDialog(null, "Please enter a valid number between 1.53 and 25 " +
+                            "meters");
                     return;
                 }
                 HeptShotPut heptShotPut = new HeptShotPut();
