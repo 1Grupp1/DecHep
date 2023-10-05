@@ -40,5 +40,7 @@ public class HeptLongJump {
 		}
 		System.out.println("Your score is: " + score + " points");
 	}
-
+	public int getScore() {
+		return score;
+	}
 }

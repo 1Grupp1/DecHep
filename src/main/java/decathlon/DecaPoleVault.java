@@ -5,9 +5,9 @@ import common.*;
 public class DecaPoleVault {
 
 	private int score;
-	private double A = 0.2797;
-	private double B = 100;
-	private double C = 1.35;
+	private final double A = 0.2797;
+	private final double B = 100;
+	private final double C = 1.35;
 	boolean active = true;
 
 	CalcTrackAndField calc = new CalcTrackAndField();
@@ -41,5 +41,7 @@ public class DecaPoleVault {
 		}
 		System.out.println("Your score is: " + score + " points");
 	}
-
+	public int getScore() {
+		return score;
+	}
 }

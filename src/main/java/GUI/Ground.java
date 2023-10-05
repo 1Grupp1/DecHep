@@ -1,12 +1,9 @@
 package GUI;
 
-import heptathlon.Hep100MHurdles;
-import heptathlon.Hep200M;
-import heptathlon.HeptHightJump;
+import decathlon.*;
+import heptathlon.*;
 
 import javax.swing.*;
-import javax.swing.event.DocumentEvent;
-import javax.swing.event.DocumentListener;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -73,6 +70,10 @@ public class Ground extends JFrame {
     private JTextField scoreDecaPoleVaultPoints;
     private JTextField scoreDecaJavelinThrowPoints;
     private JTextField scoreDeca1500mPoints;
+    private JTextField SCORETextField;
+    private JTextField POINTSTextField;
+    private JTextField SCORETextField2;
+    private JTextField POINTSTextField2;
 
     public Ground() {
         setContentPane(GroundPanel);
@@ -121,6 +122,278 @@ public class Ground extends JFrame {
                 scoreHepHighJumpPoints.setText(String.format("%d", score));
             }
         });
+//<<<<<<< HEAD
+        scoreHepShotPut.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                double distance = 0;
+                try {
+                    distance = Double.parseDouble(scoreHepShotPut.getText());
+                } catch (NumberFormatException ex) {
+                    JOptionPane.showMessageDialog(null, "Please enter a valid number");
+                    return;
+                }
+                HeptShotPut heptShotPut = new HeptShotPut();
+                heptShotPut.calculateResult(distance);
+                int score = heptShotPut.getScore();
+                scoreHepShotPutPoints.setText(String.format("%d", score));
+            }
+        });
+        scoreHep200m.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                double runningTime = 0;
+                try {
+                    runningTime = Double.parseDouble(scoreHep200m.getText());
+                } catch (NumberFormatException ex) {
+                    JOptionPane.showMessageDialog(null, "Please enter a valid number");
+                    return;
+                }
+                Hep200M hep200M = new Hep200M();
+                hep200M.calculateResult(runningTime);
+                int score = hep200M.getScore();
+                scoreHep200mPoints.setText(String.format("%d", score));
+            }
+        });
+        scoreHepLongJump.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                double distance = 0;
+                try {
+                    distance = Double.parseDouble(scoreHepLongJump.getText());
+                } catch (NumberFormatException ex) {
+                    JOptionPane.showMessageDialog(null, "Please enter a valid number");
+                    return;
+                }
+                HeptHightJump heptHightJump = new HeptHightJump();
+                heptHightJump.calculateResult(distance);
+                int score = heptHightJump.getScore();
+                scoreHepLongJumpPoints.setText(String.format("%d", score));
+            }
+        });
+        scoreHepJavelinThrow.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                double distance = 0;
+                try {
+                    distance = Double.parseDouble(scoreHepJavelinThrow.getText());
+                } catch (NumberFormatException ex) {
+                    JOptionPane.showMessageDialog(null, "Please enter a valid number");
+                    return;
+                }
+                HeptJavelinThrow heptJavelinThrow = new HeptJavelinThrow();
+                heptJavelinThrow.calculateResult(distance);
+                int score = heptJavelinThrow.getScore();
+                scoreHepJavelinThrowPoints.setText(String.format("%d", score));
+            }
+        });
+        scoreHep800m.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                double runningTime = 0;
+                try {
+                    runningTime = Double.parseDouble(scoreHep800m.getText());
+                } catch (NumberFormatException ex) {
+                    JOptionPane.showMessageDialog(null, "Please enter a valid number");
+                    return;
+                }
+                Hep800M hep800M = new Hep800M();
+                hep800M.calculateResult(runningTime);
+                int score = hep800M.getScore();
+                scoreHep800mPoints.setText(String.format("%d", score));
+            }
+        });
+        scoreDeca100m.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                double runningTime = 0;
+                try {
+                    runningTime = Double.parseDouble(scoreDeca100m.getText());
+                } catch (NumberFormatException ex) {
+                    JOptionPane.showMessageDialog(null, "Please enter a valid number");
+                    return;
+                }
+                Deca100M deca100M = new Deca100M();
+                deca100M.calculateResult(runningTime);
+                int score = deca100M.getScore();
+                scoreDeca100mPoints.setText(String.format("%d", score));
+            }
+        });
+        scoreDecaLongJump.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                double distance = 0;
+                try {
+                    distance = Double.parseDouble(scoreDecaLongJump.getText());
+                } catch (NumberFormatException ex) {
+                    JOptionPane.showMessageDialog(null, "Please enter a valid number");
+                    return;
+                }
+                DecaLongJump decaLongJump = new DecaLongJump();
+                decaLongJump.calculateResult(distance);
+                int score = decaLongJump.getScore();
+                scoreDecaLongJumpPoints.setText(String.format("%d", score));
+            }
+        });
+        scoreDecaShotPut.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                double distance = 0;
+                try {
+                    distance = Double.parseDouble(scoreDecaShotPut.getText());
+                } catch (NumberFormatException ex) {
+                    JOptionPane.showMessageDialog(null, "Please enter a valid number");
+                    return;
+                }
+                DecaShotPut decaShotPut = new DecaShotPut();
+                decaShotPut.calculateResult(distance);
+                int score = decaShotPut.getScore();
+                scoreDecaShotPutPoints.setText(String.format("%d", score));
+            }
+        });
+        scoreDecaHighJump.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                double distance = 0;
+                try {
+                    distance = Double.parseDouble(scoreDecaHighJump.getText());
+                } catch (NumberFormatException ex) {
+                    JOptionPane.showMessageDialog(null, "Please enter a valid number");
+                    return;
+                }
+                DecaLongJump decaLongJump = new DecaLongJump();
+                decaLongJump.calculateResult(distance);
+                int score = decaLongJump.getScore();
+                scoreDecaHighJumpPoints.setText(String.format("%d", score));
+            }
+        });
+        scoreDeca400m.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                double runningTime = 0;
+                try {
+                    runningTime = Double.parseDouble(scoreDeca400m.getText());
+                } catch (NumberFormatException ex) {
+                    JOptionPane.showMessageDialog(null, "Please enter a valid number");
+                    return;
+                }
+                Deca100M deca100M = new Deca100M();
+                deca100M.calculateResult(runningTime);
+                int score = deca100M.getScore();
+                scoreDeca400mPoints.setText(String.format("%d", score));
+            }
+        });
+        scoreDeca110mHurdles.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                double runningTime = 0;
+                try {
+                    runningTime = Double.parseDouble(scoreDeca110mHurdles.getText());
+                } catch (NumberFormatException ex) {
+                    JOptionPane.showMessageDialog(null, "Please enter a valid number");
+                    return;
+                }
+                Deca110MHurdles deca110MHurdles = new Deca110MHurdles();
+                deca110MHurdles.calculateResult(runningTime);
+                int score = deca110MHurdles.getScore();
+                scoreDeca110mHurdlesPoints.setText(String.format("%d", score));
+            }
+        });
+        scoreDecaDiscusThrow.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                double distance = 0;
+                try {
+                    distance = Double.parseDouble(scoreDecaDiscusThrow.getText());
+                } catch (NumberFormatException ex) {
+                    JOptionPane.showMessageDialog(null, "Please enter a valid number");
+                    return;
+                }
+                DecaDiscusThrow decaDiscusThrow = new DecaDiscusThrow();
+                decaDiscusThrow.calculateResult(distance);
+                int score = decaDiscusThrow.getScore();
+                scoreDecaDiscusThrowPoints.setText(String.format("%d", score));
+            }
+        });
+        scoreDecaPoleVault.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                double distance = 0;
+                try {
+                    distance = Double.parseDouble(scoreDecaPoleVault.getText());
+                } catch (NumberFormatException ex) {
+                    JOptionPane.showMessageDialog(null, "Please enter a valid number");
+                    return;
+                }
+                DecaPoleVault decaPoleVault = new DecaPoleVault();
+                decaPoleVault.calculateResult(distance);
+                int score = decaPoleVault.getScore();
+                scoreDecaPoleVaultPoints.setText(String.format("%d", score));
+            }
+        });
+        scoreDecaJavelinThrow.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                double distance = 0;
+                try {
+                    distance = Double.parseDouble(scoreDecaJavelinThrow.getText());
+                } catch (NumberFormatException ex) {
+                    JOptionPane.showMessageDialog(null, "Please enter a valid number");
+                    return;
+                }
+                DecaJavelinThrow decaJavelinThrow = new DecaJavelinThrow();
+                decaJavelinThrow.calculateResult(distance);
+                int score = decaJavelinThrow.getScore();
+                scoreDecaJavelinThrowPoints.setText(String.format("%d", score));
+            }
+        });
+        scoreDeca1500m.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                double runningTime = 0;
+                try {
+                    runningTime = Double.parseDouble(scoreDeca1500m.getText());
+                } catch (NumberFormatException ex) {
+                    JOptionPane.showMessageDialog(null, "Please enter a valid number");
+                    return;
+                }
+                Deca1500M deca1500M = new Deca1500M();
+                deca1500M.calculateResult(runningTime);
+                int score = deca1500M.getScore();
+                scoreDeca1500mPoints.setText(String.format("%d", score));
+            }
+        });
+        buttonCalculate.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                int totalPoints = 0;
+                try {
+                    int score1 = scoreHepShotPutPoints.getText().isEmpty() ? 0 : Integer.parseInt(scoreHepShotPutPoints.getText());
+                    int score2 = scoreHep100mHurdlesPoints.getText().isEmpty() ? 0 : Integer.parseInt(scoreHep100mHurdlesPoints.getText());
+                    int score3 = scoreHepHighJumpPoints.getText().isEmpty() ? 0 : Integer.parseInt(scoreHepHighJumpPoints.getText());
+                    int score4 = scoreHep200mPoints.getText().isEmpty() ? 0 : Integer.parseInt(scoreHep200mPoints.getText());
+                    int score5 = scoreHepLongJumpPoints.getText().isEmpty() ? 0 : Integer.parseInt(scoreHepLongJumpPoints.getText());
+                    int score6 = scoreHepJavelinThrowPoints.getText().isEmpty() ? 0 : Integer.parseInt(scoreHepJavelinThrowPoints.getText());
+                    int score7 = scoreHep800mPoints.getText().isEmpty() ? 0 : Integer.parseInt(scoreHep800mPoints.getText());
+                    int score8 = scoreDeca100mPoints.getText().isEmpty() ? 0 : Integer.parseInt(scoreDeca100mPoints.getText());
+                    int score9 = scoreDecaLongJumpPoints.getText().isEmpty() ? 0 : Integer.parseInt(scoreDecaLongJumpPoints.getText());
+                    int score10 = scoreDecaShotPutPoints.getText().isEmpty() ? 0 : Integer.parseInt(scoreDecaShotPutPoints.getText());
+                    int score11 = scoreDecaHighJumpPoints.getText().isEmpty() ? 0 : Integer.parseInt(scoreDecaHighJumpPoints.getText());
+                    int score12 = scoreDeca400mPoints.getText().isEmpty() ? 0 : Integer.parseInt(scoreDeca400mPoints.getText());
+                    int score13 = scoreDeca110mHurdlesPoints.getText().isEmpty() ? 0 : Integer.parseInt(scoreDeca110mHurdlesPoints.getText());
+                    int score14 = scoreDecaDiscusThrowPoints.getText().isEmpty() ? 0 : Integer.parseInt(scoreDecaDiscusThrowPoints.getText());
+                    int score15 = scoreDecaPoleVaultPoints.getText().isEmpty() ? 0 : Integer.parseInt(scoreDecaPoleVaultPoints.getText());
+                    int score16 = scoreDecaJavelinThrowPoints.getText().isEmpty() ? 0 : Integer.parseInt(scoreDecaJavelinThrowPoints.getText());
+                    int score17 = scoreDeca1500mPoints.getText().isEmpty() ? 0 : Integer.parseInt(scoreDeca1500mPoints.getText());
+                    totalPoints = score1 + score2 + score3 + score4 + score5 + score6 + score7 + score8 + score9 + score10 + score11 + score12 + score13 + score14 + score15 + score16 + score17;
+                } catch (NumberFormatException ex) {
+                    JOptionPane.showMessageDialog(null, "Please enter valid numbers in all fields");
+                    return;
+                }
+                totalPointsBox.setText(String.format("%d", totalPoints));
+            }
+        });
+
     }
 
     public static void main(String[] args) {

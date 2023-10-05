@@ -67,6 +67,7 @@ public class SelectDiscipline {
 	static boolean hepDecBoolean = true;
 
 	public static void decOrHep() {
+		try{
 		if (hepDecBoolean) {
 			System.out.println("Please choose which contest you want to check your score against, Heptathlon or Decathlon:");
 			System.out.println();
@@ -76,20 +77,26 @@ public class SelectDiscipline {
 			decOrHep = Integer.parseInt(sc.nextLine());
 		}
 
-		switch (decOrHep) {
-			case 1:
-			case 2:
-				hepDecBoolean = false;
-				break;
 
-			default:
+				if (decOrHep == 1 || decOrHep == 2) {
+
+					hepDecBoolean = false;
+					// break;
+				}
+				else {System.out.println("Invalid input, try again.");
+					System.out.println("");
+					decOrHep();
+
+				}
+
+
+			}catch(Exception e){
 				System.out.println("Invalid input, try again.");
 				System.out.println("");
 				decOrHep();
-				break;
-		}
 
-	}
+			}
+		}
 
 
 	public void inputSelection() {

@@ -40,5 +40,8 @@ public class HeptShotPut {
 		}
 		System.out.println("Your score is: " + score  + " points");
 	}
+	public int getScore() {
+		return score;
+	}
 
 }
