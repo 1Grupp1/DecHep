@@ -5,6 +5,9 @@ import common.*;
 public class Hep800M {
 
 	private int score;
+	public int getScore() {
+		return score;
+	}
 	private double A = 0.11193;
 	private double B = 254;
 	private double C = 1.88;
@@ -37,8 +40,5 @@ public class Hep800M {
 		}
 		System.out.println("Your score is: " + score + " points");
 
-	}
-	public int getScore() {
-		return score;
 	}
 }

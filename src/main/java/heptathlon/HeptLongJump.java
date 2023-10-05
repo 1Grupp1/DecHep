@@ -6,6 +6,9 @@ import common.InputResult;
 public class HeptLongJump {
 
 	private int score;
+	public int getScore() {
+		return score;
+	}
 	private double A = 0.188807;
 	private double B = 210;
 	private double C = 1.41;
@@ -40,7 +43,5 @@ public class HeptLongJump {
 		}
 		System.out.println("Your score is: " + score + " points");
 	}
-	public int getScore() {
-		return score;
-	}
+
 }

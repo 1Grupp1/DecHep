@@ -6,6 +6,9 @@ import common.InputResult;
 public class DecaJavelinThrow {
 
 	private int score;
+	public int getScore() {
+		return score;
+	}
 	private final double A = 10.14;
 	private final double B = 7;
 	private final double C = 1.08;
@@ -40,7 +43,5 @@ public class DecaJavelinThrow {
 		System.out.println("The result is: " + score);
 
 	}
-	public int getScore() {
-		return score;
-	}
+
 }

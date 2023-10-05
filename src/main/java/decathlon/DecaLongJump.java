@@ -5,6 +5,9 @@ import common.*;
 public class DecaLongJump {
 
 	private int score;
+	public int getScore() {
+		return score;
+	}
 	private final double A = 0.14354;
 	private final double B = 220;
 	private final double C = 1.4;
@@ -38,8 +41,5 @@ public class DecaLongJump {
 			}
 		}
 		System.out.println("Your score is: " + score + " points");
-	}
-	public int getScore() {
-		return score;
 	}
 }

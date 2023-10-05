@@ -6,6 +6,9 @@ import common.InputResult;
 public class Hep100MHurdles {
 
 	private int score;
+	public int getScore() {
+		return score;
+	}
 	private double A = 9.23076;
 	private double B = 26.7;
 	private double C = 1.835;
@@ -39,8 +42,4 @@ public class Hep100MHurdles {
 		System.out.println("Your score is: " + score + " points");
 
 	}
-	public int getScore() {
-		return score;
-	}
-
 }

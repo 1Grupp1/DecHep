@@ -5,6 +5,9 @@ import common.*;
 public class Hep200M {
 
     private int score;
+    public int getScore() {
+        return score;
+    }
     private double A = 4.99087;
     private double B = 42.5;
     private double C = 1.81;
@@ -38,9 +41,7 @@ public class Hep200M {
 
     }
 
-    public int getScore() {
-        return score;
-    }
+
 }
 
 

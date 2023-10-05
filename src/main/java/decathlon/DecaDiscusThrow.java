@@ -6,6 +6,9 @@ import common.InputResult;
 public class DecaDiscusThrow {
 
 	private int score;
+	public int getScore() {
+		return score;
+	}
 	private final double A = 12.91;
 	private final double B = 4;
 	private final double C = 1.1;
@@ -38,8 +41,5 @@ public class DecaDiscusThrow {
 		}
 		System.out.println("Your score is: " + score + " points");
 
-	}
-	public int getScore() {
-		return score;
 	}
 }

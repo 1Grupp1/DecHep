@@ -5,6 +5,9 @@ import common.*;
 public class Deca100M {
 //test
 	private int score;
+	public int getScore() {
+		return score;
+	}
 	private final double A = 25.4347;
 	private final double B = 18;
 	private final double C = 1.81;
@@ -37,8 +40,5 @@ public class Deca100M {
 		}
 		System.out.println("Your score is " + score + " points");
 
-	}
-	public int getScore() {
-		return score;
 	}
 }

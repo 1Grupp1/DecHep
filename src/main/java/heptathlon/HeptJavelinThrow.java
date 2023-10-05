@@ -6,6 +6,9 @@ import common.InputResult;
 public class HeptJavelinThrow {
 
 	private int score;
+	public int getScore() {
+		return score;
+	}
 	private double A = 15.9803;
 	private double B = 3.8;
 	private double C = 1.04;
@@ -40,7 +43,5 @@ public class HeptJavelinThrow {
 		}
 		System.out.println("Your score is: " + score + " points");
 	}
-	public int getScore() {
-		return score;
-	}
+
 }

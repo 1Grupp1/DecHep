@@ -6,6 +6,9 @@ import common.InputResult;
 public class DecaHighJump {
 
 	private int score;
+	public int getScore() {
+		return score;
+	}
 	private final double A = 0.8465;
 	private final double B = 75;
 	private final double C = 1.42;
@@ -38,8 +41,5 @@ public class DecaHighJump {
 		}
 		System.out.println("Your score is: " + score + " points");
 
-	}
-	public int getScore() {
-		return score;
 	}
 }

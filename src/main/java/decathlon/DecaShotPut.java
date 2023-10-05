@@ -6,6 +6,9 @@ import common.InputResult;
 public class DecaShotPut {
 
 	private int score;
+	public int getScore() {
+		return score;
+	}
 	private final double A = 51.39;
 	private final double B = 1.5;
 	private final double C = 1.05;
@@ -39,8 +42,5 @@ public class DecaShotPut {
 		}
 		System.out.println("Your score is: " + score + " points");
 
-	}
-	public int getScore() {
-		return score;
 	}
 }

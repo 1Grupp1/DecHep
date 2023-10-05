@@ -5,6 +5,9 @@ import common.*;
 public class Deca110MHurdles {
 
 	private int score;
+	public int getScore() {
+		return score;
+	}
 	private final double A = 5.74352;
 	private final double B = 28.5;
 	private final double C = 1.92;
@@ -36,8 +39,5 @@ public class Deca110MHurdles {
 		}
 		System.out.println("Your score is " + score + " points");
 
-	}
-	public int getScore() {
-		return score;
 	}
 }
