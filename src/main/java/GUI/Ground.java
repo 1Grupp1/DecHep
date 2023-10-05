@@ -134,12 +134,12 @@ public class Ground extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 double distance = 0;
                 try {
-                    distance = Double.parseDouble(scoreHepShotPut.getText());                    if (distance < 1.53 || distance > 25) {
+                    distance = Double.parseDouble(scoreHepShotPut.getText());
+                    if (distance < 1.53 || distance > 25) {
                         throw new NumberFormatException();
                     }
                 } catch (NumberFormatException ex) {
-                    JOptionPane.showMessageDialog(null, "Please enter a valid number between 1.53 and 25 " +
-                            "meters");
+                    JOptionPane.showMessageDialog(null, "Please enter a valid number between 1.53 and 25 meters");
                     return;
                 }
                 HeptShotPut heptShotPut = new HeptShotPut();
@@ -154,8 +154,11 @@ public class Ground extends JFrame {
                 double runningTime = 0;
                 try {
                     runningTime = Double.parseDouble(scoreHep200m.getText());
+                    if (runningTime < 18 || runningTime > 42.08) {
+                        throw new NumberFormatException();
+                    }
                 } catch (NumberFormatException ex) {
-                    JOptionPane.showMessageDialog(null, "Please enter a valid number");
+                    JOptionPane.showMessageDialog(null, "Please enter a valid number between 18 and 42.08 seconds");
                     return;
                 }
                 Hep200M hep200M = new Hep200M();
@@ -170,8 +173,11 @@ public class Ground extends JFrame {
                 double distance = 0;
                 try {
                     distance = Double.parseDouble(scoreHepLongJump.getText());
+                    if (distance < 214 || distance > 1000) {
+                        throw new NumberFormatException();
+                    }
                 } catch (NumberFormatException ex) {
-                    JOptionPane.showMessageDialog(null, "Please enter a valid number");
+                    JOptionPane.showMessageDialog(null, "Please enter a valid number between 214 and 1000 centimeters");
                     return;
                 }
                 HeptLongJump heptLongJump = new HeptLongJump();
@@ -186,8 +192,11 @@ public class Ground extends JFrame {
                 double distance = 0;
                 try {
                     distance = Double.parseDouble(scoreHepJavelinThrow.getText());
+                    if (distance < 3.9 || distance > 90) {
+                        throw new NumberFormatException();
+                    }
                 } catch (NumberFormatException ex) {
-                    JOptionPane.showMessageDialog(null, "Please enter a valid number");
+                    JOptionPane.showMessageDialog(null, "Please enter a valid number between 3.9 and 90 meters");
                     return;
                 }
                 HeptJavelinThrow heptJavelinThrow = new HeptJavelinThrow();
@@ -202,8 +211,11 @@ public class Ground extends JFrame {
                 double runningTime = 0;
                 try {
                     runningTime = Double.parseDouble(scoreHep800m.getText());
+                    if (runningTime < 70 || runningTime > 250.79) {
+                        throw new NumberFormatException();
+                    }
                 } catch (NumberFormatException ex) {
-                    JOptionPane.showMessageDialog(null, "Please enter a valid number");
+                    JOptionPane.showMessageDialog(null, "Please enter a valid number between 70 and 250.79 seconds");
                     return;
                 }
                 Hep800M hep800M = new Hep800M();
