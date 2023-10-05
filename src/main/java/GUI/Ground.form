@@ -820,7 +820,7 @@
         <properties>
           <background color="-264199"/>
           <foreground color="-16711423"/>
-          <text value="Calculate Points"/>
+          <text value="Calculate Total Points"/>
         </properties>
       </component>
       <component id="378b3" class="javax.swing.JTextPane" binding="textDecaLongJump">
