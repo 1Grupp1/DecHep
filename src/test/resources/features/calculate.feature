@@ -40,6 +40,7 @@ Feature: Decathlon100M
 
 
 
+
   Scenario Outline: Names
     Given I want to register "<name>"
     And I select the "<event>" in step
