@@ -30,6 +30,16 @@ Feature: Decathlon100M
       | "Deca110MH" | 30     | 0     | "No to slow time" |
       | "Deca110MH" | 8      | 1895  | "No to fast time" |
 
+    #In this first field you select a discipline, but only track disciplines
+  #In the second field you enter a result. One valid number then two invalid numbers.
+  #In result you put one above the limit and one under the limit
+  #In the field score you get the score from the previous activity and result
+  #Last field you either get a message that says "yes" if its valid,
+  #If its invalid you either get "No to slow time" or "No to fast time"
+
+
+
+
 
   Scenario Outline: Names
     Given I want to register "<name>"
@@ -45,6 +55,12 @@ Feature: Decathlon100M
       | Fabian Horlin | Decathlon  | Valid   |
       | Elin123       | Heptathlon | Invalid |
       | Elin?         | Heptathlon | Invalid |
+
+      #In the first field you want to register a name, you cant use a name with numbers or special characters
+     #You either select Heptathlon or Decathlon
+     #You save both the name and event
+     #If you done everything correctly you will get a message that says that the name is valid
+     #If you done it incorrectly you will get a message that says its invalid
 
   Scenario Outline: Field
     Given I choose selected <gren>
@@ -83,5 +99,13 @@ Feature: Decathlon100M
       | "HeptShotPut"      | 12       | 661    | "Yes"          |
       | "HeptShotPut"      | 26       | 1610   | "To far throw" |
       | "HeptShotPut"      | 1        | 0      | "No points"    |
+
+    #In the field gren you choose what discipline you want
+    #In the second field you enter a resultat. One valid number then two invalid numbers.
+    #In resultat you put one above the limit and one under the limit
+    #The third field you combine the score from what discipline you choose and what resultat you got
+    #In the last field you get "Yes" if you're points are valid
+    #If they are invalid you either get "To far throw", "To high jump", "To long jump" or just "No points"
+
 
 
