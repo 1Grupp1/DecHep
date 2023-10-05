@@ -38,6 +38,7 @@ Feature: Decathlon100M
   #If its invalid you either get "No to slow time" or "No to fast time"
 
 
+
   Scenario Outline: Names
     Given I want to register "<name>"
     And I select the "<event>" in step
