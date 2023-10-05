@@ -230,8 +230,11 @@ public class Ground extends JFrame {
                 double runningTime = 0;
                 try {
                     runningTime = Double.parseDouble(scoreDeca100m.getText());
+                    if (runningTime < 9 || runningTime > 17.9) {
+                        throw new NumberFormatException();
+                    }
                 } catch (NumberFormatException ex) {
-                    JOptionPane.showMessageDialog(null, "Please enter a valid number");
+                    JOptionPane.showMessageDialog(null, "Please enter a valid number between 9 and 17.9 seconds");
                     return;
                 }
                 Deca100M deca100M = new Deca100M();
@@ -246,8 +249,11 @@ public class Ground extends JFrame {
                 double distance = 0;
                 try {
                     distance = Double.parseDouble(scoreDecaLongJump.getText());
+                    if (distance < 225 || distance > 1000) {
+                        throw new NumberFormatException();
+                    }
                 } catch (NumberFormatException ex) {
-                    JOptionPane.showMessageDialog(null, "Please enter a valid number");
+                    JOptionPane.showMessageDialog(null, "Please enter a valid number between 225 and 1000 centimeters");
                     return;
                 }
                 DecaLongJump decaLongJump = new DecaLongJump();
@@ -262,8 +268,11 @@ public class Ground extends JFrame {
                 double distance = 0;
                 try {
                     distance = Double.parseDouble(scoreDecaShotPut.getText());
+                    if (distance < 1.53 || distance > 25) {
+                        throw new NumberFormatException();
+                    }
                 } catch (NumberFormatException ex) {
-                    JOptionPane.showMessageDialog(null, "Please enter a valid number");
+                    JOptionPane.showMessageDialog(null, "Please enter a valid number between 1.53 and 25 meters");
                     return;
                 }
                 DecaShotPut decaShotPut = new DecaShotPut();
@@ -278,8 +287,11 @@ public class Ground extends JFrame {
                 double distance = 0;
                 try {
                     distance = Double.parseDouble(scoreDecaHighJump.getText());
+                    if (distance < 76.2 || distance > 260) {
+                        throw new NumberFormatException();
+                    }
                 } catch (NumberFormatException ex) {
-                    JOptionPane.showMessageDialog(null, "Please enter a valid number");
+                    JOptionPane.showMessageDialog(null, "Please enter a valid number between 76.2 and 260 centimeters");
                     return;
                 }
                 DecaHighJump decaHighJump = new DecaHighJump();
@@ -294,8 +306,11 @@ public class Ground extends JFrame {
                 double runningTime = 0;
                 try {
                     runningTime = Double.parseDouble(scoreDeca400m.getText());
+                    if (runningTime < 42.5 || runningTime > 81) {
+                        throw new NumberFormatException();
+                    }
                 } catch (NumberFormatException ex) {
-                    JOptionPane.showMessageDialog(null, "Please enter a valid number");
+                    JOptionPane.showMessageDialog(null, "Please enter a valid number between 42.5 and 81 seconds");
                     return;
                 }
                 Deca400M deca400M = new Deca400M();
@@ -310,8 +325,11 @@ public class Ground extends JFrame {
                 double runningTime = 0;
                 try {
                     runningTime = Double.parseDouble(scoreDeca110mHurdles.getText());
+                    if (runningTime < 12 || runningTime > 28) {
+                        throw new NumberFormatException();
+                    }
                 } catch (NumberFormatException ex) {
-                    JOptionPane.showMessageDialog(null, "Please enter a valid number");
+                    JOptionPane.showMessageDialog(null, "Please enter a valid number between 12 and 28 seconds");
                     return;
                 }
                 Deca110MHurdles deca110MHurdles = new Deca110MHurdles();
@@ -326,8 +344,11 @@ public class Ground extends JFrame {
                 double distance = 0;
                 try {
                     distance = Double.parseDouble(scoreDecaDiscusThrow.getText());
+                    if (distance < 4.1 || distance > 76) {
+                        throw new NumberFormatException();
+                    }
                 } catch (NumberFormatException ex) {
-                    JOptionPane.showMessageDialog(null, "Please enter a valid number");
+                    JOptionPane.showMessageDialog(null, "Please enter a valid number between 4.1 and 76 meters");
                     return;
                 }
                 DecaDiscusThrow decaDiscusThrow = new DecaDiscusThrow();
@@ -342,8 +363,11 @@ public class Ground extends JFrame {
                 double distance = 0;
                 try {
                     distance = Double.parseDouble(scoreDecaPoleVault.getText());
+                    if (distance < 103 || distance > 700) {
+                        throw new NumberFormatException();
+                    }
                 } catch (NumberFormatException ex) {
-                    JOptionPane.showMessageDialog(null, "Please enter a valid number");
+                    JOptionPane.showMessageDialog(null, "Please enter a valid number between 103 and 700 centimeters");
                     return;
                 }
                 DecaPoleVault decaPoleVault = new DecaPoleVault();
@@ -358,8 +382,11 @@ public class Ground extends JFrame {
                 double distance = 0;
                 try {
                     distance = Double.parseDouble(scoreDecaJavelinThrow.getText());
+                    if (distance < 7.2 || distance > 90) {
+                        throw new NumberFormatException();
+                    }
                 } catch (NumberFormatException ex) {
-                    JOptionPane.showMessageDialog(null, "Please enter a valid number");
+                    JOptionPane.showMessageDialog(null, "Please enter a valid number between 7.2 and 90 meters");
                     return;
                 }
                 DecaJavelinThrow decaJavelinThrow = new DecaJavelinThrow();
@@ -374,8 +401,11 @@ public class Ground extends JFrame {
                 double runningTime = 0;
                 try {
                     runningTime = Double.parseDouble(scoreDeca1500m.getText());
+                    if (runningTime < 180 || runningTime > 474) {
+                        throw new NumberFormatException();
+                    }
                 } catch (NumberFormatException ex) {
-                    JOptionPane.showMessageDialog(null, "Please enter a valid number");
+                    JOptionPane.showMessageDialog(null, "Please enter a valid number between 180 and 474 seconds");
                     return;
                 }
                 Deca1500M deca1500M = new Deca1500M();
