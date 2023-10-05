@@ -165,9 +165,9 @@ public class Ground extends JFrame {
                     JOptionPane.showMessageDialog(null, "Please enter a valid number");
                     return;
                 }
-                HeptHightJump heptHightJump = new HeptHightJump();
-                heptHightJump.calculateResult(distance);
-                int score = heptHightJump.getScore();
+                HeptLongJump heptLongJump = new HeptLongJump();
+                heptLongJump.calculateResult(distance);
+                int score = heptLongJump.getScore();
                 scoreHepLongJumpPoints.setText(String.format("%d", score));
             }
         });
@@ -261,9 +261,9 @@ public class Ground extends JFrame {
                     JOptionPane.showMessageDialog(null, "Please enter a valid number");
                     return;
                 }
-                DecaLongJump decaLongJump = new DecaLongJump();
-                decaLongJump.calculateResult(distance);
-                int score = decaLongJump.getScore();
+                DecaHighJump decaHighJump = new DecaHighJump();
+                decaHighJump.calculateResult(distance);
+                int score = decaHighJump.getScore();
                 scoreDecaHighJumpPoints.setText(String.format("%d", score));
             }
         });
@@ -277,9 +277,9 @@ public class Ground extends JFrame {
                     JOptionPane.showMessageDialog(null, "Please enter a valid number");
                     return;
                 }
-                Deca100M deca100M = new Deca100M();
-                deca100M.calculateResult(runningTime);
-                int score = deca100M.getScore();
+                Deca400M deca400M = new Deca400M();
+                deca400M.calculateResult(runningTime);
+                int score = deca400M.getScore();
                 scoreDeca400mPoints.setText(String.format("%d", score));
             }
         });
