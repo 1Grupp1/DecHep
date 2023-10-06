@@ -47,7 +47,7 @@ public class Ground extends JFrame {
     private JTextField scoreDecaPoleVault;
     private JTextField scoreDecaJavelinThrow;
     private JTextField scoreDeca1500m;
-    private JTextPane pleaseInsertCompetitorsNameTextPane;
+    private JTextPane insertCompetitorsNameTextPane;
     private JTextPane totalPointsText;
     private JTextField totalPointsBox;
     private JPanel GroundPanel;
@@ -79,7 +79,7 @@ public class Ground extends JFrame {
         setContentPane(GroundPanel);
         setTitle("Heptathlon and Decathlon GUI");
         setDefaultCloseOperation(EXIT_ON_CLOSE);
-        setSize(1000, 1700);
+        setSize(1200, 1700);
         setLocationRelativeTo(null);
         pack();
         setVisible(true);

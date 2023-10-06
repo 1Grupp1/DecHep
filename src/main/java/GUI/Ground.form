@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="GUI.Ground">
-  <grid id="27dc6" binding="GroundPanel" layout-manager="GridLayoutManager" row-count="15" column-count="10" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+  <grid id="27dc6" binding="GroundPanel" layout-manager="GridLayoutManager" row-count="18" column-count="10" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
     <margin top="0" left="0" bottom="0" right="0"/>
     <constraints>
-      <xy x="20" y="20" width="1078" height="737"/>
+      <xy x="20" y="20" width="1239" height="832"/>
     </constraints>
     <properties>
-      <background color="-7489287"/>
+      <background color="-6710887"/>
+      <foreground color="-6710887"/>
+      <visible value="true"/>
     </properties>
     <border type="line" title-justification="2" title-position="2">
       <color color="-16711423"/>
@@ -14,24 +16,25 @@
     <children>
       <component id="15a35" class="javax.swing.JTextField" binding="insertNameBox">
         <constraints>
-          <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
+          <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="1" fill="0" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
         <properties>
           <background color="-1910583"/>
+          <font name="Lucida Fax"/>
           <horizontalAlignment value="0"/>
-          <toolTipText value="Enter the name here"/>
+          <toolTipText value="Enter name here"/>
         </properties>
       </component>
       <component id="9639d" class="javax.swing.JTextPane" binding="HeptathlonText">
         <constraints>
-          <grid row="2" column="1" row-span="1" col-span="2" vsize-policy="6" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
+          <grid row="2" column="1" row-span="1" col-span="2" vsize-policy="6" hsize-policy="6" anchor="2" fill="0" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="50"/>
           </grid>
         </constraints>
         <properties>
-          <background color="-7489287"/>
+          <background color="-6710887"/>
           <editable value="false"/>
           <font name="Comic Sans MS" size="20" style="1"/>
           <foreground color="-16514044"/>
@@ -40,12 +43,12 @@
       </component>
       <component id="60187" class="javax.swing.JTextPane" binding="textHep100mHurdles">
         <constraints>
-          <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
-            <preferred-size width="150" height="50"/>
+          <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="7" anchor="4" fill="2" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="30"/>
           </grid>
         </constraints>
         <properties>
-          <background color="-7489287"/>
+          <background color="-6710887"/>
           <editable value="false"/>
           <font name="JetBrains Mono" style="3"/>
           <foreground color="-16711423"/>
@@ -54,12 +57,12 @@
       </component>
       <component id="d7bfc" class="javax.swing.JTextPane" binding="textHepHighJump">
         <constraints>
-          <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
-            <preferred-size width="150" height="50"/>
+          <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="7" anchor="4" fill="2" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="30"/>
           </grid>
         </constraints>
         <properties>
-          <background color="-7489287"/>
+          <background color="-6710887"/>
           <editable value="false"/>
           <font name="JetBrains Mono" style="3"/>
           <foreground color="-16711423"/>
@@ -68,12 +71,12 @@
       </component>
       <component id="8b8" class="javax.swing.JTextPane" binding="textHepShotPut">
         <constraints>
-          <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
-            <preferred-size width="150" height="50"/>
+          <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="7" anchor="4" fill="2" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="30"/>
           </grid>
         </constraints>
         <properties>
-          <background color="-7489287"/>
+          <background color="-6710887"/>
           <editable value="false"/>
           <font name="JetBrains Mono" style="3"/>
           <foreground color="-16711423"/>
@@ -82,40 +85,26 @@
       </component>
       <component id="64057" class="javax.swing.JTextPane" binding="textHep200m">
         <constraints>
-          <grid row="7" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
-            <preferred-size width="150" height="50"/>
+          <grid row="7" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="4" fill="2" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="30"/>
           </grid>
         </constraints>
         <properties>
-          <background color="-7489287"/>
+          <background color="-6710887"/>
           <editable value="false"/>
           <font name="JetBrains Mono" style="3"/>
           <foreground color="-16711423"/>
           <text value="200 m"/>
         </properties>
       </component>
-      <component id="174e1" class="javax.swing.JTextPane" binding="textHepLongJump">
-        <constraints>
-          <grid row="8" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
-            <preferred-size width="150" height="50"/>
-          </grid>
-        </constraints>
-        <properties>
-          <background color="-7489287"/>
-          <editable value="false"/>
-          <font name="JetBrains Mono" style="3"/>
-          <foreground color="-16711423"/>
-          <text value="Long Jump"/>
-        </properties>
-      </component>
       <component id="2cf23" class="javax.swing.JTextPane" binding="textHepJavelinThrow">
         <constraints>
-          <grid row="9" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
-            <preferred-size width="150" height="50"/>
+          <grid row="9" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="4" fill="2" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="30"/>
           </grid>
         </constraints>
         <properties>
-          <background color="-7489287"/>
+          <background color="-6710887"/>
           <editable value="false"/>
           <font name="JetBrains Mono" style="3"/>
           <foreground color="-16711423"/>
@@ -124,12 +113,12 @@
       </component>
       <component id="9a30e" class="javax.swing.JTextPane" binding="textHep800m">
         <constraints>
-          <grid row="10" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
-            <preferred-size width="150" height="50"/>
+          <grid row="10" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="4" fill="2" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="30"/>
           </grid>
         </constraints>
         <properties>
-          <background color="-7489287"/>
+          <background color="-6710887"/>
           <editable value="false"/>
           <font name="JetBrains Mono" style="3"/>
           <foreground color="-16711423"/>
@@ -138,7 +127,7 @@
       </component>
       <component id="90ed7" class="javax.swing.JTextField" binding="scoreHep100mHurdles">
         <constraints>
-          <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
+          <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="1" fill="0" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
@@ -152,7 +141,7 @@
       </component>
       <component id="40cb9" class="javax.swing.JTextField" binding="scoreHep200m">
         <constraints>
-          <grid row="7" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
+          <grid row="7" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="1" fill="0" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
@@ -166,7 +155,7 @@
       </component>
       <component id="7c07b" class="javax.swing.JTextField" binding="scoreHepLongJump">
         <constraints>
-          <grid row="8" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
+          <grid row="8" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="1" fill="0" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
@@ -179,7 +168,7 @@
       </component>
       <component id="bb8fa" class="javax.swing.JTextField" binding="scoreHepJavelinThrow">
         <constraints>
-          <grid row="9" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
+          <grid row="9" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="1" fill="0" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
@@ -192,7 +181,7 @@
       </component>
       <component id="660c9" class="javax.swing.JTextField" binding="scoreHep800m">
         <constraints>
-          <grid row="10" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
+          <grid row="10" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="1" fill="0" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
@@ -205,12 +194,13 @@
       </component>
       <component id="e7bb4" class="javax.swing.JTextPane" binding="DecathlonText">
         <constraints>
-          <grid row="2" column="6" row-span="1" col-span="2" vsize-policy="6" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
+          <grid row="2" column="6" row-span="1" col-span="2" vsize-policy="6" hsize-policy="6" anchor="2" fill="0" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="50"/>
           </grid>
         </constraints>
         <properties>
-          <background color="-7489287"/>
+          <background color="-6710887"/>
+          <caretColor color="-6710887"/>
           <editable value="false"/>
           <font name="Comic Sans MS" size="20" style="1"/>
           <foreground color="-16711423"/>
@@ -219,40 +209,26 @@
       </component>
       <component id="33854" class="javax.swing.JTextPane" binding="textDecaShotPut">
         <constraints>
-          <grid row="6" column="6" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
-            <preferred-size width="150" height="50"/>
+          <grid row="6" column="6" row-span="1" col-span="1" vsize-policy="6" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="30"/>
           </grid>
         </constraints>
         <properties>
-          <background color="-7489287"/>
+          <background color="-6710887"/>
           <editable value="false"/>
           <font name="JetBrains Mono" style="3"/>
           <foreground color="-16711423"/>
           <text value="Shot Put"/>
         </properties>
       </component>
-      <component id="8c39d" class="javax.swing.JTextPane" binding="textDecaHighJump">
-        <constraints>
-          <grid row="7" column="6" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
-            <preferred-size width="150" height="50"/>
-          </grid>
-        </constraints>
-        <properties>
-          <background color="-7489287"/>
-          <editable value="false"/>
-          <font name="JetBrains Mono" style="3"/>
-          <foreground color="-16711423"/>
-          <text value="High Jump"/>
-        </properties>
-      </component>
       <component id="7438c" class="javax.swing.JTextPane" binding="textDeca400m">
         <constraints>
           <grid row="8" column="6" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
-            <preferred-size width="150" height="50"/>
+            <preferred-size width="150" height="30"/>
           </grid>
         </constraints>
         <properties>
-          <background color="-7489287"/>
+          <background color="-6710887"/>
           <editable value="false"/>
           <font name="JetBrains Mono" style="3"/>
           <foreground color="-16711423"/>
@@ -262,11 +238,11 @@
       <component id="3623c" class="javax.swing.JTextPane" binding="textDeca110mHurdles">
         <constraints>
           <grid row="9" column="6" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
-            <preferred-size width="150" height="50"/>
+            <preferred-size width="150" height="30"/>
           </grid>
         </constraints>
         <properties>
-          <background color="-7489287"/>
+          <background color="-6710887"/>
           <editable value="false"/>
           <font name="JetBrains Mono" style="3"/>
           <foreground color="-16711423"/>
@@ -276,11 +252,11 @@
       <component id="26d01" class="javax.swing.JTextPane" binding="textDecaDiscusThrow">
         <constraints>
           <grid row="10" column="6" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
-            <preferred-size width="150" height="50"/>
+            <preferred-size width="150" height="30"/>
           </grid>
         </constraints>
         <properties>
-          <background color="-7489287"/>
+          <background color="-6710887"/>
           <editable value="false"/>
           <font name="JetBrains Mono" style="3"/>
           <foreground color="-16711423"/>
@@ -290,11 +266,11 @@
       <component id="fee42" class="javax.swing.JTextPane" binding="textDecaPoleVault">
         <constraints>
           <grid row="11" column="6" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
-            <preferred-size width="150" height="50"/>
+            <preferred-size width="150" height="30"/>
           </grid>
         </constraints>
         <properties>
-          <background color="-7489287"/>
+          <background color="-6710887"/>
           <editable value="false"/>
           <font name="JetBrains Mono" style="3"/>
           <foreground color="-16711423"/>
@@ -304,11 +280,11 @@
       <component id="751db" class="javax.swing.JTextPane" binding="textDecaJavelinThrow">
         <constraints>
           <grid row="12" column="6" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
-            <preferred-size width="150" height="50"/>
+            <preferred-size width="150" height="30"/>
           </grid>
         </constraints>
         <properties>
-          <background color="-7489287"/>
+          <background color="-6710887"/>
           <editable value="false"/>
           <font name="JetBrains Mono" style="3"/>
           <foreground color="-16711423"/>
@@ -318,11 +294,11 @@
       <component id="65187" class="javax.swing.JTextPane" binding="textDeca1500m">
         <constraints>
           <grid row="13" column="6" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
-            <preferred-size width="150" height="39"/>
+            <preferred-size width="150" height="30"/>
           </grid>
         </constraints>
         <properties>
-          <background color="-7489287"/>
+          <background color="-6710887"/>
           <editable value="false"/>
           <font name="JetBrains Mono" style="3"/>
           <foreground color="-16711423"/>
@@ -331,7 +307,7 @@
       </component>
       <component id="dbd77" class="javax.swing.JTextField" binding="scoreDeca100m">
         <constraints>
-          <grid row="4" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
+          <grid row="4" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="7" anchor="1" fill="0" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
@@ -344,7 +320,7 @@
       </component>
       <component id="22162" class="javax.swing.JTextField" binding="scoreDecaLongJump">
         <constraints>
-          <grid row="5" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
+          <grid row="5" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="1" fill="0" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
@@ -357,7 +333,7 @@
       </component>
       <component id="96558" class="javax.swing.JTextField" binding="scoreDecaShotPut">
         <constraints>
-          <grid row="6" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
+          <grid row="6" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="1" fill="0" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
@@ -371,7 +347,7 @@
       </component>
       <component id="49d9c" class="javax.swing.JTextField" binding="scoreDecaHighJump">
         <constraints>
-          <grid row="7" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
+          <grid row="7" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="1" fill="0" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
@@ -384,7 +360,7 @@
       </component>
       <component id="e8afb" class="javax.swing.JTextField" binding="scoreDeca400m">
         <constraints>
-          <grid row="8" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
+          <grid row="8" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="1" fill="0" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
@@ -398,7 +374,7 @@
       </component>
       <component id="671bd" class="javax.swing.JTextField" binding="scoreDeca110mHurdles">
         <constraints>
-          <grid row="9" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
+          <grid row="9" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="1" fill="0" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
@@ -411,7 +387,7 @@
       </component>
       <component id="1bde5" class="javax.swing.JTextField" binding="scoreDecaDiscusThrow">
         <constraints>
-          <grid row="10" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
+          <grid row="10" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="1" fill="0" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
@@ -425,7 +401,7 @@
       </component>
       <component id="56fa0" class="javax.swing.JTextField" binding="scoreDecaPoleVault">
         <constraints>
-          <grid row="11" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
+          <grid row="11" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="1" fill="0" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
@@ -438,7 +414,7 @@
       </component>
       <component id="68db2" class="javax.swing.JTextField" binding="scoreDecaJavelinThrow">
         <constraints>
-          <grid row="12" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
+          <grid row="12" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="1" fill="0" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
@@ -451,7 +427,7 @@
       </component>
       <component id="cef64" class="javax.swing.JTextField" binding="scoreDeca1500m">
         <constraints>
-          <grid row="13" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
+          <grid row="13" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="1" fill="0" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
@@ -462,60 +438,40 @@
           <toolTipText value="Enter you score in seconds, max 474, min 180 "/>
         </properties>
       </component>
-      <component id="f0da6" class="javax.swing.JTextPane" binding="pleaseInsertCompetitorsNameTextPane" default-binding="true">
+      <component id="f0da6" class="javax.swing.JTextPane" binding="insertCompetitorsNameTextPane" default-binding="true">
         <constraints>
-          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
-            <preferred-size width="150" height="50"/>
+          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="1" fill="0" indent="1" use-parent-layout="false">
+            <preferred-size width="170" height="-1"/>
           </grid>
         </constraints>
         <properties>
-          <background color="-7489287"/>
+          <background color="-6710887"/>
           <editable value="false"/>
-          <font size="12" style="1"/>
+          <font size="13" style="1"/>
           <foreground color="-16514044"/>
-          <text value="Please insert competitors name:"/>
-        </properties>
-      </component>
-      <component id="ef0b1" class="javax.swing.JSeparator">
-        <constraints>
-          <grid row="14" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <foreground color="-7489287"/>
-        </properties>
-      </component>
-      <component id="cab6d" class="javax.swing.JSeparator">
-        <constraints>
-          <grid row="14" column="6" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <foreground color="-7489287"/>
-        </properties>
-      </component>
-      <component id="639c4" class="javax.swing.JSeparator">
-        <constraints>
-          <grid row="14" column="7" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <foreground color="-7489287"/>
+          <text value="Insert competitors name:"/>
         </properties>
       </component>
       <component id="bf637" class="javax.swing.JSeparator">
         <constraints>
-          <grid row="14" column="8" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <grid row="14" column="8" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="180" height="30"/>
+          </grid>
         </constraints>
         <properties>
-          <foreground color="-7489287"/>
+          <background color="-6710887"/>
+          <foreground color="-6710887"/>
+          <visible value="true"/>
         </properties>
       </component>
       <component id="cd65b" class="javax.swing.JTextField" binding="scoreHep100mHurdlesPoints">
         <constraints>
-          <grid row="4" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
+          <grid row="4" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="1" fill="0" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
         <properties>
-          <background color="-7489287"/>
+          <background color="-6710887"/>
           <editable value="false"/>
           <font style="1"/>
           <foreground color="-16711423"/>
@@ -524,12 +480,12 @@
       </component>
       <component id="d89f4" class="javax.swing.JTextField" binding="scoreDeca100mPoints">
         <constraints>
-          <grid row="4" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
+          <grid row="4" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="1" fill="0" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
         <properties>
-          <background color="-7489287"/>
+          <background color="-6710887"/>
           <editable value="false"/>
           <font style="1"/>
           <foreground color="-16711423"/>
@@ -539,12 +495,12 @@
       </component>
       <component id="ae4ab" class="javax.swing.JTextField" binding="scoreHepHighJumpPoints">
         <constraints>
-          <grid row="5" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="5" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="1" fill="0" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
         <properties>
-          <background color="-7489287"/>
+          <background color="-6710887"/>
           <editable value="false"/>
           <font style="1"/>
           <foreground color="-16711423"/>
@@ -554,12 +510,12 @@
       </component>
       <component id="6b4e5" class="javax.swing.JTextField" binding="scoreHepShotPutPoints">
         <constraints>
-          <grid row="6" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="6" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="1" fill="0" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
         <properties>
-          <background color="-7489287"/>
+          <background color="-6710887"/>
           <editable value="false"/>
           <font style="1"/>
           <foreground color="-16711423"/>
@@ -569,12 +525,12 @@
       </component>
       <component id="f52ca" class="javax.swing.JTextField" binding="scoreDecaShotPutPoints">
         <constraints>
-          <grid row="6" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="6" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="1" fill="0" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
         <properties>
-          <background color="-7489287"/>
+          <background color="-6710887"/>
           <editable value="false"/>
           <font style="1"/>
           <foreground color="-16711423"/>
@@ -584,12 +540,12 @@
       </component>
       <component id="6d4fb" class="javax.swing.JTextField" binding="scoreHep200mPoints">
         <constraints>
-          <grid row="7" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="7" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="1" fill="0" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
         <properties>
-          <background color="-7489287"/>
+          <background color="-6710887"/>
           <editable value="false"/>
           <font style="1"/>
           <foreground color="-16711423"/>
@@ -599,12 +555,12 @@
       </component>
       <component id="bd996" class="javax.swing.JTextField" binding="scoreDecaHighJumpPoints">
         <constraints>
-          <grid row="7" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="7" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="1" fill="0" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
         <properties>
-          <background color="-7489287"/>
+          <background color="-6710887"/>
           <editable value="false"/>
           <font style="1"/>
           <foreground color="-16711423"/>
@@ -614,12 +570,12 @@
       </component>
       <component id="d78d7" class="javax.swing.JTextField" binding="scoreHepLongJumpPoints">
         <constraints>
-          <grid row="8" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="8" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="1" fill="0" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
         <properties>
-          <background color="-7489287"/>
+          <background color="-6710887"/>
           <editable value="false"/>
           <font style="1"/>
           <foreground color="-16711423"/>
@@ -628,12 +584,12 @@
       </component>
       <component id="65b05" class="javax.swing.JTextField" binding="scoreDeca400mPoints">
         <constraints>
-          <grid row="8" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="8" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="1" fill="0" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
         <properties>
-          <background color="-7489287"/>
+          <background color="-6710887"/>
           <editable value="false"/>
           <font style="1"/>
           <foreground color="-16711423"/>
@@ -642,12 +598,12 @@
       </component>
       <component id="91176" class="javax.swing.JTextField" binding="scoreHepJavelinThrowPoints">
         <constraints>
-          <grid row="9" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="9" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="1" fill="0" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
         <properties>
-          <background color="-7489287"/>
+          <background color="-6710887"/>
           <editable value="false"/>
           <font style="1"/>
           <foreground color="-16711423"/>
@@ -656,12 +612,12 @@
       </component>
       <component id="b7d5d" class="javax.swing.JTextField" binding="scoreDeca110mHurdlesPoints">
         <constraints>
-          <grid row="9" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="9" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="1" fill="0" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
         <properties>
-          <background color="-7489287"/>
+          <background color="-6710887"/>
           <editable value="false"/>
           <font style="1"/>
           <foreground color="-16711423"/>
@@ -671,12 +627,12 @@
       </component>
       <component id="8fa82" class="javax.swing.JTextField" binding="scoreHep800mPoints">
         <constraints>
-          <grid row="10" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="10" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="1" fill="0" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
         <properties>
-          <background color="-7489287"/>
+          <background color="-6710887"/>
           <editable value="false"/>
           <font style="1"/>
           <foreground color="-16711423"/>
@@ -685,12 +641,12 @@
       </component>
       <component id="41de5" class="javax.swing.JTextField" binding="scoreDecaDiscusThrowPoints">
         <constraints>
-          <grid row="10" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="10" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="1" fill="0" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
         <properties>
-          <background color="-7489287"/>
+          <background color="-6710887"/>
           <editable value="false"/>
           <font style="1"/>
           <foreground color="-16711423"/>
@@ -699,12 +655,12 @@
       </component>
       <component id="1201d" class="javax.swing.JTextField" binding="scoreDecaPoleVaultPoints">
         <constraints>
-          <grid row="11" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="11" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="1" fill="0" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
         <properties>
-          <background color="-7489287"/>
+          <background color="-6710887"/>
           <editable value="false"/>
           <font style="1"/>
           <foreground color="-16711423"/>
@@ -713,12 +669,12 @@
       </component>
       <component id="3ed5b" class="javax.swing.JTextField" binding="scoreDecaJavelinThrowPoints">
         <constraints>
-          <grid row="12" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="12" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="1" fill="0" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
         <properties>
-          <background color="-7489287"/>
+          <background color="-6710887"/>
           <editable value="false"/>
           <font style="1"/>
           <foreground color="-16711423"/>
@@ -727,12 +683,12 @@
       </component>
       <component id="762e9" class="javax.swing.JTextField" binding="scoreDeca1500mPoints">
         <constraints>
-          <grid row="13" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="13" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="1" fill="0" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
         <properties>
-          <background color="-7489287"/>
+          <background color="-6710887"/>
           <editable value="false"/>
           <font style="1"/>
           <foreground color="-16711423"/>
@@ -741,94 +697,68 @@
       </component>
       <component id="2629a" class="javax.swing.JButton" binding="buttonEnterName">
         <constraints>
-          <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="1" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <foreground color="-324352"/>
           <text value="Save Name"/>
+          <toolTipText value="Click to Store Name"/>
         </properties>
       </component>
       <component id="7b956" class="javax.swing.JTextPane" binding="totalPointsText">
         <constraints>
-          <grid row="1" column="6" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="0" indent="0" use-parent-layout="false">
-            <preferred-size width="150" height="50"/>
+          <grid row="1" column="6" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="9" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="170" height="-1"/>
           </grid>
         </constraints>
         <properties>
-          <background color="-7489287"/>
+          <background color="-6710887"/>
           <editable value="false"/>
-          <font size="12" style="1"/>
+          <font size="13" style="1"/>
           <foreground color="-16514044"/>
-          <text value="          Total Points:"/>
+          <text value="            Total Points:"/>
         </properties>
       </component>
       <component id="1eb66" class="javax.swing.JTextField" binding="totalPointsBox">
         <constraints>
-          <grid row="1" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
+          <grid row="1" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="1" fill="0" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
         <properties>
           <background color="-1910583"/>
           <editable value="false"/>
-          <font name="Lucida Console" size="16" style="1"/>
+          <font name="Lucida Fax" size="16" style="1"/>
           <horizontalAlignment value="0"/>
+          <toolTipText value="Total score"/>
         </properties>
       </component>
       <component id="e1744" class="javax.swing.JTextField" binding="scoreDecaLongJumpPoints">
         <constraints>
-          <grid row="5" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="5" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="1" fill="0" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
         <properties>
-          <background color="-7489287"/>
+          <background color="-6710887"/>
           <editable value="false"/>
           <font style="1"/>
           <foreground color="-16711423"/>
           <horizontalAlignment value="0"/>
         </properties>
       </component>
-      <component id="4b4d6" class="javax.swing.JButton" binding="buttonEraseScore">
-        <constraints>
-          <grid row="12" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <background color="-324352"/>
-          <foreground color="-16514044"/>
-          <text value="Delete Score"/>
-        </properties>
-      </component>
-      <component id="8f7ab" class="javax.swing.JButton" binding="buttonCalculate">
-        <constraints>
-          <grid row="12" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <background color="-264199"/>
-          <foreground color="-16711423"/>
-          <text value="Calculate Total Points!"/>
-        </properties>
-      </component>
       <component id="378b3" class="javax.swing.JTextPane" binding="textDecaLongJump">
         <constraints>
-          <grid row="5" column="6" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
-            <preferred-size width="150" height="50"/>
+          <grid row="5" column="6" row-span="1" col-span="1" vsize-policy="6" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="30"/>
           </grid>
         </constraints>
         <properties>
-          <background color="-7489287"/>
+          <background color="-6710887"/>
           <editable value="false"/>
           <font name="JetBrains Mono" style="3"/>
           <foreground color="-16711423"/>
           <text value="Long Jump"/>
-        </properties>
-      </component>
-      <component id="5e943" class="javax.swing.JSeparator">
-        <constraints>
-          <grid row="14" column="2" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <foreground color="-7489287"/>
         </properties>
       </component>
       <component id="fbd00" class="javax.swing.JSeparator">
@@ -836,7 +766,8 @@
           <grid row="7" column="9" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <foreground color="-7489287"/>
+          <foreground color="-6710887"/>
+          <visible value="true"/>
         </properties>
       </component>
       <component id="edd92" class="javax.swing.JSeparator">
@@ -844,7 +775,8 @@
           <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <foreground color="-7489287"/>
+          <foreground color="-6710887"/>
+          <visible value="true"/>
         </properties>
       </component>
       <component id="d023a" class="javax.swing.JSeparator">
@@ -852,15 +784,19 @@
           <grid row="1" column="4" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <foreground color="-7489287"/>
+          <foreground color="-6710887"/>
+          <visible value="true"/>
         </properties>
       </component>
       <component id="b4f51" class="javax.swing.JSeparator">
         <constraints>
-          <grid row="4" column="5" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <grid row="4" column="5" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="0" height="40"/>
+          </grid>
         </constraints>
         <properties>
-          <foreground color="-7489287"/>
+          <foreground color="-6710887"/>
+          <visible value="true"/>
         </properties>
       </component>
       <component id="7c63e" class="javax.swing.JSeparator">
@@ -868,12 +804,13 @@
           <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <foreground color="-7489287"/>
+          <foreground color="-6710887"/>
+          <visible value="true"/>
         </properties>
       </component>
       <component id="b26d0" class="javax.swing.JTextField" binding="SCORETextField" default-binding="true">
         <constraints>
-          <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
@@ -885,12 +822,14 @@
           <font name="Comic Sans MS" style="1"/>
           <foreground color="-16711423"/>
           <horizontalAlignment value="0"/>
+          <opaque value="true"/>
           <text value="SCORE"/>
+          <visible value="true"/>
         </properties>
       </component>
       <component id="688e5" class="javax.swing.JTextField" binding="POINTSTextField">
         <constraints>
-          <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
@@ -905,7 +844,7 @@
       </component>
       <component id="b7f63" class="javax.swing.JTextField" binding="SCORETextField2">
         <constraints>
-          <grid row="3" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="3" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
@@ -920,12 +859,12 @@
       </component>
       <component id="becd2" class="javax.swing.JTextPane" binding="textDeca100m">
         <constraints>
-          <grid row="4" column="6" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
-            <preferred-size width="150" height="50"/>
+          <grid row="4" column="6" row-span="1" col-span="1" vsize-policy="6" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="30"/>
           </grid>
         </constraints>
         <properties>
-          <background color="-7489287"/>
+          <background color="-6710887"/>
           <editable value="false"/>
           <font name="JetBrains Mono" style="3"/>
           <foreground color="-16711423"/>
@@ -934,7 +873,7 @@
       </component>
       <component id="d0708" class="javax.swing.JTextField" binding="POINTSTextField2">
         <constraints>
-          <grid row="3" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="3" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
@@ -949,7 +888,7 @@
       </component>
       <component id="edc94" class="javax.swing.JTextField" binding="scoreHepHighJump">
         <constraints>
-          <grid row="5" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
+          <grid row="5" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="1" fill="0" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
@@ -963,7 +902,7 @@
       </component>
       <component id="16095" class="javax.swing.JTextField" binding="scoreHepShotPut">
         <constraints>
-          <grid row="6" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
+          <grid row="6" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="1" fill="0" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
@@ -973,6 +912,73 @@
           <horizontalAlignment value="0"/>
           <text value=""/>
           <toolTipText value="Enter score in meters, max 25, min 1.53 "/>
+        </properties>
+      </component>
+      <component id="174e1" class="javax.swing.JTextPane" binding="textHepLongJump">
+        <constraints>
+          <grid row="8" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="4" fill="2" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="30"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-6710887"/>
+          <editable value="false"/>
+          <font name="JetBrains Mono" style="3"/>
+          <foreground color="-16711423"/>
+          <text value="Long Jump"/>
+        </properties>
+      </component>
+      <component id="8c39d" class="javax.swing.JTextPane" binding="textDecaHighJump">
+        <constraints>
+          <grid row="7" column="6" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="30"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-6710887"/>
+          <editable value="false"/>
+          <font name="JetBrains Mono" style="3"/>
+          <foreground color="-16711423"/>
+          <text value="High Jump"/>
+        </properties>
+      </component>
+      <component id="8f7ab" class="javax.swing.JButton" binding="buttonCalculate">
+        <constraints>
+          <grid row="15" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-264199"/>
+          <foreground color="-16711423"/>
+          <text value="Calculate Total Points!"/>
+        </properties>
+      </component>
+      <component id="4b4d6" class="javax.swing.JButton" binding="buttonEraseScore">
+        <constraints>
+          <grid row="15" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-324352"/>
+          <foreground color="-16514044"/>
+          <text value="Delete Score"/>
+        </properties>
+      </component>
+      <component id="248a9" class="javax.swing.JSeparator">
+        <constraints>
+          <grid row="16" column="3" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <foreground color="-7489287"/>
+          <visible value="false"/>
+        </properties>
+      </component>
+      <component id="cc8ed" class="javax.swing.JSeparator">
+        <constraints>
+          <grid row="17" column="2" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="180" height="30"/>
+          </grid>
+        </constraints>
+        <properties>
+          <foreground color="-6710887"/>
         </properties>
       </component>
     </children>
