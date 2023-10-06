@@ -18,7 +18,7 @@ public class HeptHightJump {
 
 	// Calculate the score based on distance and height. Measured in cenimeters.
 	public void calculateResult(double distance) {
-
+		active=true;
 		while (active) {
 
 			try {

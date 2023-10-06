@@ -1,37 +1,50 @@
 package common;
 
 import java.util.Scanner;
-
 public class InputName {
-	String compName = "";
 
-	private static String name;
+
+	static String name;
+
+	static boolean thisbool=true;
 
 	public static String getName() {
-
 		return name;
 	}
 
-	//Add competitor
-	public String addCompetitor() {
+	public static void addCompetitor(int numberOfKeys) {
 
-		boolean active = true;
-		String compName = "";
-		Scanner sc = new Scanner(System.in);
+		while (thisbool){
+			Scanner sc = new Scanner(System.in);
 
-		while (active) {
-			System.out.println("Please enter the competitor's name:");
-			compName = sc.nextLine();
-			name=compName;
-			if (!compName.matches("^a-öA-ö\\s]+$")) {
-				System.out.println("Only use letters when putting in competitors name.");
+			for (int i = 0; i < numberOfKeys; i++) {
+				String compName;
+				boolean validName = false;
 
-			} else {
-				active = false;
-			}
+				do {
+					System.out.print("Enter the name for competitor " + (i + 1) + ": ");
+					compName = sc.nextLine();
 
+					if (isValidName(compName)) {
+
+						validName = true;
+					}else {
+						System.out.println("Invalid name. Only use letters when putting in the competitor's name.");
+					}
+
+				}while (!validName);
+				SelectDiscipline.addKey(compName);
+				name=compName;
+
+			}thisbool=false;
 		}
+		System.out.print("This is your competitors: ");
 
-		return compName;
 	}
+
+	private static boolean isValidName(String name) {
+		return name.matches(".*[a-öA-ö]");
+	}
+
+
 }

@@ -17,7 +17,7 @@ public class Hep800M {
 
 	// Calculate the score based on time. All running events.
 	public void calculateResult(double runningTime) {
-
+		active=true;
 		while (active) {
 
 			try {

@@ -1,5 +1,6 @@
 package common;
 
+import java.util.HashMap;
 import java.util.Scanner;
 
 import decathlon.Deca100M;
@@ -28,6 +29,23 @@ public class SelectDiscipline {
 	private static int discipline;
 
 	private static String decHep;
+	static String key;
+
+	static int result;
+
+	static int numberOfKeys;
+
+
+	static int playerChoice;
+
+	public static int getPlayerChoice() {
+
+		return playerChoice;
+	}
+	public static int getTotalResult() {
+
+		return result;
+	}
 
 
 	public static int getDiscipline() {
@@ -37,6 +55,13 @@ public class SelectDiscipline {
 	public static String getDisciplineSelection() {
 
 		return decHep;
+	}
+
+	private static HashMap<String, Integer> keyValueMap;
+
+	public SelectDiscipline() {
+		keyValueMap = new HashMap<>();
+
 	}
 
 	int disciplineSelected;
@@ -65,6 +90,7 @@ public class SelectDiscipline {
 
 	//Receive input	of selection of discipline.
 	static boolean hepDecBoolean = true;
+	static boolean numberOfUser=true;
 
 	public static void decOrHep() {
 		try{
@@ -98,6 +124,67 @@ public class SelectDiscipline {
 			}
 		}
 
+	public static void runKeyValueApp() {
+		if(numberOfUser) {
+			try {
+				System.out.print("Enter the number of participants: ");
+				Scanner sc = new Scanner(System.in);
+
+				if (sc.hasNextInt() && numberOfUser) {
+					numberOfKeys = sc.nextInt();
+					InputName.addCompetitor(numberOfKeys);
+					numberOfUser = false;
+
+
+				} else {
+					System.out.println("Invalid input, try again.");
+					System.out.println("");
+					runKeyValueApp();
+
+				}
+			} catch (Exception e) {
+				System.out.println("Invalid input, try again.");
+				System.out.println("");
+				runKeyValueApp();
+
+
+			}
+		}
+		collectKeyValues(); }
+
+	public static void collectKeyValues() {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Choose contestant");
+		System.out.println(keyValueMap);
+		playerChoice=sc.nextInt()-1;
+
+		if (playerChoice > -1 && playerChoice < numberOfKeys) {
+			key = getKey(playerChoice);
+			System.out.println("you choosed: "+ key +" to participate");
+			// Player choice is valid
+		} else {System.out.println("Invalid player choice. Please choose a valid player.");
+			collectKeyValues(); // Repeat the process until a valid choice is made
+		}
+	}
+	public void giveKeyValues(){
+		String key = getKey(playerChoice);
+		int value=result;
+		addKeyValue(key, value);
+		System.out.println(keyValueMap);
+
+	}
+	public static void addKey(String key) {
+		keyValueMap.put(key, null);}
+
+	public static String getKey(int index) {
+		return (String) keyValueMap.keySet().toArray()[index];
+	}
+
+	public static void addKeyValue(String key, int value) {
+		keyValueMap.put(key, value);
+	}
+
+
 
 	public void inputSelection() {
 		System.out.println();
@@ -125,7 +212,7 @@ public class SelectDiscipline {
 				printDisciplinesDecathlon();
 				discipline = Integer.parseInt(sc.nextLine());
 				disciplineSelected = discipline;
-				chosenDisciplineDecathlon2();
+				//chosenDisciplineDecathlon2();
 				makeSelection2();
 			}
 
@@ -141,7 +228,7 @@ public class SelectDiscipline {
 		String[] decHep2 = {"Hep 200M", "Hep 800M", "Hep 100M Hurdles", "Hep High Jump", "HepLongJump", "Hep Shot Put", "Hep Javelin Throw"};
 		decHep = decHep2[discipline - 1];
 
-		  System.out.println(decHep);
+
 
 	}
 
@@ -150,7 +237,7 @@ public class SelectDiscipline {
 				, "Dec Discus Throw", "Deca Javelin Throw", "Deca Shot Put"};
 		decHep = decHep2[discipline - 1];
 
-		 System.out.println(decHep);
+
 
 	}
 
@@ -164,36 +251,43 @@ public class SelectDiscipline {
 				System.out.println("You have selected Heptathlon 200M, input your result in seconds.");
 				System.out.println("Valid results is between 18 sek and 42.08 sek.");
 				hep200M.calculateResult(inputResult.enterResult());
+				result=hep200M.getScore();
 				break;
 			case 2:
 				System.out.println("You have selected Heptathlon 800M, input your result in seconds.");
 				System.out.println("Valid results is between 100 sek and 250.79 sek.");
 				hep800M.calculateResult(inputResult.enterResult());
+				result=hep800M.getScore();
 				break;
 			case 3:
 				System.out.println("You have selected Heptathlon 100M Hurdles, input your result in seconds.");
 				System.out.println("Valid results is between 11 sek and 26.4 sek.");
 				hep100MHurdles.calculateResult(inputResult.enterResult());
+				result=hep100MHurdles.getScore();
 				break;
 			case 4:
 				System.out.println("You have selected Heptathlon High Jump, input your result in centimeter.");
 				System.out.println("Valid results is between 75.7 cm and 260 cm.");
 				hepHighJump.calculateResult(inputResult.enterResult());
+				result=hepHighJump.getScore();
 				break;
 			case 5:
 				System.out.println("You have selected Heptathlon Long Jump, input your result in centimeter.");
 				System.out.println("Valid results is between 214 cm and 1000 cm.");
 				hepLongJump.calculateResult(inputResult.enterResult());
+				result=hepLongJump.getScore();
 				break;
 			case 6:
 				System.out.println("You have selected Heptathlon Shot Put, input your result in meter.");
 				System.out.println("Valid results is between 1.53 m and 25 m.");
 				hepShotPut.calculateResult(inputResult.enterResult());
+				result=hepShotPut.getScore();
 				break;
 			case 7:
 				System.out.println("You have selected Heptathlon Javelin Throw, input your result in meter.");
 				System.out.println("Valid results is between 3.9 m and 90 m.");
 				hepJavelinThrow.calculateResult(inputResult.enterResult());
+				result=hepJavelinThrow.getScore();
 				break;
 
 			default:
@@ -203,7 +297,11 @@ public class SelectDiscipline {
 				break;
 		}
 
+		int existingValue = keyValueMap.get(key) != null ? keyValueMap.get(key) : 0;
+		result=result+existingValue;
+		giveKeyValues();
 		excelMaker.excelMaker();
+		System.out.println("");
 
 	}
 

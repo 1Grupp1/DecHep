@@ -19,12 +19,14 @@ import java.util.Set;
 import java.util.TreeMap;
 
 public class ExcelMaker {
-    private int id;
+    // private int id;
     private String name;
 
     private int result;
     private int score;
     private String decHep;
+
+    private int total;
 
     static boolean saveExcel=true;
 
@@ -56,24 +58,26 @@ public class ExcelMaker {
 
                 // Add headers to the new sheet
                 Row headerRow = sheet.createRow(0);
-                headerRow.createCell(0).setCellValue("ID");
+
+                headerRow.createCell(0).setCellValue("NAME");
                 headerRow.createCell(1).setCellValue("Dec/Hep");
-                headerRow.createCell(2).setCellValue("NAME");
-                headerRow.createCell(3).setCellValue("Result");
-                headerRow.createCell(4).setCellValue("Score");
+                headerRow.createCell(2).setCellValue("Result");
+                headerRow.createCell(3).setCellValue("Score");
+                headerRow.createCell(4).setCellValue("Total");
             }
 
 
+            //  int id = InputName.getNumberOfNames()-1;
+            name = SelectDiscipline.getKey(SelectDiscipline.getPlayerChoice());
             decHep = SelectDiscipline.getDisciplineSelection();
-            id = SelectDiscipline.getDiscipline();
-            name = InputName.getName();
             result = InputResult.getResult();
             score = CalcTrackAndField.getScore();
+            total = SelectDiscipline.getTotalResult();
 
             // This data needs to be written (Object[])
             Map<String, Object[]> data = new TreeMap<String, Object[]>();
 
-            data.put("2", new Object[]{id, decHep, name, result, score});
+            data.put("2", new Object[]{name, decHep, result, score, total});
 
             // Get the last row number in the existing sheet
             int lastRowNum = sheet.getLastRowNum();

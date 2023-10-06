@@ -18,7 +18,7 @@ public class Hep100MHurdles {
 
 	// Calculate the score based on time. All running events.
 	public void calculateResult(double runningTime) {
-
+		active=true;
 		while (active) {
 
 			try {
