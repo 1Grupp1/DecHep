@@ -36,7 +36,7 @@ public class SelectDiscipline {
 	static int numberOfKeys;
 
 
-	static int playerChoice;
+	static int playerChoice=-1;
 
 	public static int getPlayerChoice() {
 
@@ -127,14 +127,17 @@ public class SelectDiscipline {
 	public static void runKeyValueApp() {
 		if(numberOfUser) {
 			try {
-				System.out.print("Enter the number of participants: ");
+				System.out.print("Enter number of participants: ");
 				Scanner sc = new Scanner(System.in);
 
-				if (sc.hasNextInt() && numberOfUser) {
-					numberOfKeys = sc.nextInt();
-					InputName.addCompetitor(numberOfKeys);
-					numberOfUser = false;
+				String users =sc.nextLine();
+				//lägg till )
+				if (users.matches("[0-9]+")) {
+					numberOfKeys= Integer.parseInt(users);}
 
+				if (numberOfKeys>0){
+					numberOfUser = false;
+					InputName.addCompetitor(numberOfKeys);
 
 				} else {
 					System.out.println("Invalid input, try again.");
@@ -156,14 +159,19 @@ public class SelectDiscipline {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Choose contestant");
 		System.out.println(keyValueMap);
-		playerChoice=sc.nextInt()-1;
+		String thisPlayerChoice = sc.nextLine();
+
+		if (thisPlayerChoice.matches("[0-9]+")) {
+			playerChoice = Integer.parseInt(thisPlayerChoice) - 1;
+		}
 
 		if (playerChoice > -1 && playerChoice < numberOfKeys) {
 			key = getKey(playerChoice);
-			System.out.println("you choosed: "+ key +" to participate");
+			System.out.println("you choosed: " + key + " to participate");
 			// Player choice is valid
-		} else {System.out.println("Invalid player choice. Please choose a valid player.");
-			collectKeyValues(); // Repeat the process until a valid choice is made
+		} else {
+			System.out.println("Invalid player choice. Please choose a valid player.");
+				collectKeyValues(); // Repeat the process until a valid choice is made
 		}
 	}
 	public void giveKeyValues(){
