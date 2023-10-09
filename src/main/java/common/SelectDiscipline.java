@@ -212,7 +212,7 @@ public class SelectDiscipline {
 				printDisciplinesDecathlon();
 				discipline = Integer.parseInt(sc.nextLine());
 				disciplineSelected = discipline;
-				//chosenDisciplineDecathlon2();
+				chosenDisciplineDecathlon2();
 				makeSelection2();
 			}
 
