@@ -78,7 +78,6 @@ public class SelectDiscipline {
 	DecaShotPut decaShotPut = new DecaShotPut();
 	DecaJavelinThrow decaJavelinThrow = new DecaJavelinThrow();
 	DecaPoleVault poleVault = new DecaPoleVault();
-
 	Hep200M hep200M = new Hep200M();
 	Hep800M hep800M = new Hep800M();
 	Hep100MHurdles hep100MHurdles = new Hep100MHurdles();
@@ -123,18 +122,20 @@ public class SelectDiscipline {
 
 			}
 		}
-
 	public static void runKeyValueApp() {
 		if(numberOfUser) {
 			try {
-				System.out.print("Enter the number of participants: ");
+				System.out.print("Enter number of participants: ");
 				Scanner sc = new Scanner(System.in);
 
-				if (sc.hasNextInt() && numberOfUser) {
-					numberOfKeys = sc.nextInt();
-					InputName.addCompetitor(numberOfKeys);
-					numberOfUser = false;
+				String users =sc.nextLine();
+				//lägg till )
+				if (users.matches("[0-9]+")) {
+					numberOfKeys= Integer.parseInt(users);}
 
+				if (numberOfKeys>0){
+					numberOfUser = false;
+					InputName.addCompetitor(numberOfKeys);
 
 				} else {
 					System.out.println("Invalid input, try again.");
