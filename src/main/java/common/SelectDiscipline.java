@@ -36,7 +36,7 @@ public class SelectDiscipline {
 	static int numberOfKeys;
 
 
-	static int playerChoice;
+	static int playerChoice=-1;
 
 	public static int getPlayerChoice() {
 
@@ -157,14 +157,19 @@ public class SelectDiscipline {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Choose contestant");
 		System.out.println(keyValueMap);
-		playerChoice=sc.nextInt()-1;
+		String thisPlayerChoice = sc.nextLine();
+
+		if (thisPlayerChoice.matches("[0-9]+")) {
+			playerChoice = Integer.parseInt(thisPlayerChoice) - 1;
+		}
 
 		if (playerChoice > -1 && playerChoice < numberOfKeys) {
 			key = getKey(playerChoice);
-			System.out.println("you choosed: "+ key +" to participate");
+			System.out.println("you choosed: " + key + " to participate");
 			// Player choice is valid
-		} else {System.out.println("Invalid player choice. Please choose a valid player.");
-			collectKeyValues(); // Repeat the process until a valid choice is made
+		} else {
+			System.out.println("Invalid player choice. Please choose a valid player.");
+				collectKeyValues(); // Repeat the process until a valid choice is made
 		}
 	}
 	public void giveKeyValues(){
