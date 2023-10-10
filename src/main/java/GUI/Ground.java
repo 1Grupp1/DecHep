@@ -538,43 +538,43 @@ public class Ground extends JFrame {
                 points = row.createCell(2);
                 points.setCellValue(hep800m);
 
-                row = sheet.createRow(1);
+                row = sheet.getRow(1);
                 eventCell2 = row.createCell(4);
                 eventCell2.setCellValue(textDeca100m.getText());
                 point2 = row.createCell(5);
                 point2.setCellValue(dec100m);
 
-                row = sheet.createRow(2);
+                row = sheet.getRow(2);
                 eventCell2 = row.createCell(4);
                 eventCell2.setCellValue(textDecaLongJump.getText());
                 point2 = row.createCell(5);
                 point2.setCellValue(decLongJump);
 
-                row = sheet.createRow(3);
+                row = sheet.getRow(3);
                 eventCell2 = row.createCell(4);
                 eventCell2.setCellValue(textDecaShotPut.getText());
                 point2 = row.createCell(5);
                 point2.setCellValue(decShotPut);
 
-                row = sheet.createRow(4);
+                row = sheet.getRow(4);
                 eventCell2 = row.createCell(4);
                 eventCell2.setCellValue(textDecaHighJump.getText());
                 point2 = row.createCell(5);
                 point2.setCellValue(decHighJump);
 
-                row = sheet.createRow(5);
+                row = sheet.getRow(5);
                 eventCell2 = row.createCell(4);
                 eventCell2.setCellValue(textDeca400m.getText());
                 point2 = row.createCell(5);
                 point2.setCellValue(dec400m);
 
-                row = sheet.createRow(6);
+                row = sheet.getRow(6);
                 eventCell2 = row.createCell(4);
                 eventCell2.setCellValue(textDeca110mHurdles.getText());
                 point2 = row.createCell(5);
                 point2.setCellValue(dec110H);
 
-                row = sheet.createRow(7);
+                row = sheet.getRow(7);
                 eventCell2 = row.createCell(4);
                 eventCell2.setCellValue(textDecaDiscusThrow.getText());
                 point2 = row.createCell(5);
