@@ -6,10 +6,14 @@ import heptathlon.*;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+
 import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 
 public class Ground extends JFrame {
 
@@ -79,6 +83,7 @@ public class Ground extends JFrame {
     private JTextField ResultTextField2;
     private JTextField POINTSTextField2;
     private JTextField totalpointsBox2;
+    private JCheckBox checkBox1;
 
     public Ground() {
         setContentPane(GroundPanel);
@@ -458,9 +463,9 @@ public class Ground extends JFrame {
             @Override
             public void actionPerformed(ActionEvent ee) {
 
-
+                //skapa excel filen
                 Workbook workbook = new XSSFWorkbook();
-                Sheet sheet = workbook.createSheet("GuiExcell");
+                Sheet sheet = workbook.createSheet("GuiExcel");
 
                 String name = insertNameBox.getText();
                 String hep100m = scoreHep100mHurdlesPoints.getText();
@@ -482,17 +487,60 @@ public class Ground extends JFrame {
                 String decJavelinT = scoreDecaJavelinThrowPoints.getText();
                 String dec1500m = scoreDeca1500mPoints.getText();
 
-                Row row = sheet.createRow(0);
+                String totPointHep = totalPointsBox.getText();
+                String totPointDec = totalpointsBox2.getText();
+
+
+                Row row = sheet.createRow(0);  //Skapa första raden i excel
+
+                //sätt storleken på kolumnerna, första raden är vilken cell, andra storleken
+                sheet.setColumnWidth(0, 4000);
+                sheet.setColumnWidth(1, 6000);
+                sheet.setColumnWidth(3, 4000);
+                sheet.setColumnWidth(4, 6000);
+                sheet.setColumnWidth(5, 4000);
+                sheet.setColumnWidth(6, 4000);
+
+                //skapa en stil på en cell, font och färg
+                CellStyle style = workbook.createCellStyle();
+                Font font = workbook.createFont();
+                font.setBold(true);
+                style.setFont(font);
+
+                // Skapa en färg och ange den i stilen
+                style.setFillForegroundColor(IndexedColors.GREY_25_PERCENT.getIndex());
+                style.setFillPattern(FillPatternType.SOLID_FOREGROUND);
+
+                CellStyle style2 = workbook.createCellStyle();
+                Font font2 = workbook.createFont();
+                font2.setBold(true);
+                style2.setFont(font2);
+
+                /*Skapa alla celler och vilket innehåll de skall ha, viktigt att de först ska skapas, sedan ev. hämtas,
+                ordningen viktig.*/
                 Cell nameCell = row.createCell(0);
                 nameCell.setCellValue("Name");
+                nameCell.setCellStyle(style);
                 Cell eventCell = row.createCell(1);
                 eventCell.setCellValue("Heptathlon");
+                eventCell.setCellStyle(style);
                 Cell points = row.createCell(2);
                 points.setCellValue("Points");
+                points.setCellStyle(style);
                 Cell eventCell2 = row.createCell(4);
                 eventCell2.setCellValue("Decathlon");
+                eventCell2.setCellStyle(style);
                 Cell point2 = row.createCell(5);
                 point2.setCellValue("Points");
+                point2.setCellStyle(style);
+
+                row = sheet.createRow(13);
+                Cell pointCell = row.createCell(1);
+                pointCell.setCellValue("Total poäng Heptathlon: ");
+                pointCell.setCellStyle(style2);
+                Cell pointCell2 = row.createCell(4);
+                pointCell2.setCellValue("Total poäng Decathlon: ");
+                pointCell2.setCellStyle(style2);
 
                 row = sheet.createRow(1);
                 nameCell = row.createCell(0);
@@ -598,9 +646,22 @@ public class Ground extends JFrame {
                 point2 = row.createCell(5);
                 point2.setCellValue(dec1500m);
 
-                try (FileOutputStream outputStream = new FileOutputStream("user_data.xlsx")) {
+                row = sheet.getRow(13);
+                eventCell = row.createCell(2);
+                eventCell.setCellValue(totPointHep);
+
+                row = sheet.getRow(13);
+                eventCell2 = row.createCell(5);
+                eventCell2.setCellValue(totPointDec);
+
+
+                //Sätt namnet på excel filen, med datum om man vill ha det, Samt text när filen har skapats
+                try  {
+                    SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy.MM.dd_HHmm");
+                    String timestamp = dateFormat.format(new Date());
+                    FileOutputStream outputStream = new FileOutputStream("GUI_event_data " + timestamp + ".xlsx");
                     workbook.write(outputStream);
-                    System.out.println("Data written to Excelfile successfully!");
+                    System.out.println("Data written to Excel file successfully!");
                 } catch (IOException ex) {
                     ex.printStackTrace();
                 }
@@ -608,9 +669,7 @@ public class Ground extends JFrame {
             }
         });
 
-
-
     }public static void main (String[]args){
-        new Ground();
+        new Ground();  //behövs för att köra GUI filen
     }
 }

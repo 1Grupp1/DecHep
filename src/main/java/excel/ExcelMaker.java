@@ -36,7 +36,7 @@ public class ExcelMaker {
 
             // Load the existing workbook if it exists, or create a new one
             XSSFWorkbook workbook;
-            File file = new File("Decathlon.xlsx");
+            File file = new File("Decathlon/Heptathlon_event_data.xlsx");
             if (file.exists() && !saveExcel) {
 
                 FileInputStream fis = new FileInputStream(file);
