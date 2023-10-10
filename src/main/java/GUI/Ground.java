@@ -6,6 +6,10 @@ import heptathlon.*;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import org.apache.poi.ss.usermodel.*;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import java.io.FileOutputStream;
+import java.io.IOException;
 
 public class Ground extends JFrame {
 
@@ -52,7 +56,7 @@ public class Ground extends JFrame {
     private JTextField totalPointsBox;
     private JPanel GroundPanel;
     private JButton buttonCalculate;
-    private JButton buttonEraseScore;
+    private JButton buttonSaveScore;
     private JTextField scoreHep100mHurdlesPoints;
     private JTextField scoreDeca100mPoints;
     private JTextField scoreHepHighJumpPoints;
@@ -70,9 +74,9 @@ public class Ground extends JFrame {
     private JTextField scoreDecaPoleVaultPoints;
     private JTextField scoreDecaJavelinThrowPoints;
     private JTextField scoreDeca1500mPoints;
-    private JTextField SCORETextField;
+    private JTextField RESULTTextField;
     private JTextField POINTSTextField;
-    private JTextField SCORETextField2;
+    private JTextField ResultTextField2;
     private JTextField POINTSTextField2;
     private JTextField totalpointsBox2;
 
@@ -450,9 +454,163 @@ public class Ground extends JFrame {
             }
         });
 
-    }
+        buttonSaveScore.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent ee) {
 
-    public static void main(String[] args) {
+
+                Workbook workbook = new XSSFWorkbook();
+                Sheet sheet = workbook.createSheet("GuiExcell");
+
+                String name = insertNameBox.getText();
+                String hep100m = scoreHep100mHurdlesPoints.getText();
+                String hepHighJump = scoreHepHighJumpPoints.getText();
+                String hepShotPut = scoreHepShotPutPoints.getText();
+                String hep200m = scoreHep200mPoints.getText();
+                String hepLongJump = scoreHepLongJumpPoints.getText();
+                String hepJavelinThrow = scoreHepJavelinThrowPoints.getText();
+                String hep800m = scoreHep800mPoints.getText();
+
+                String dec100m = scoreDeca100mPoints.getText();
+                String decLongJump = scoreDecaLongJumpPoints.getText();
+                String decShotPut = scoreDecaShotPutPoints.getText();
+                String decHighJump = scoreDecaHighJumpPoints.getText();
+                String dec400m = scoreDeca400mPoints.getText();
+                String dec110H = scoreDeca110mHurdlesPoints.getText();
+                String decDiscus = scoreDecaDiscusThrowPoints.getText();
+                String decPoleVault = scoreDecaPoleVaultPoints.getText();
+                String decJavelinT = scoreDecaJavelinThrowPoints.getText();
+                String dec1500m = scoreDeca1500mPoints.getText();
+
+                Row row = sheet.createRow(0);
+                Cell nameCell = row.createCell(0);
+                nameCell.setCellValue("Name");
+                Cell eventCell = row.createCell(1);
+                eventCell.setCellValue("Heptathlon");
+                Cell points = row.createCell(2);
+                points.setCellValue("Points");
+                Cell eventCell2 = row.createCell(4);
+                eventCell2.setCellValue("Decathlon");
+                Cell point2 = row.createCell(5);
+                point2.setCellValue("Points");
+
+                row = sheet.createRow(1);
+                nameCell = row.createCell(0);
+                nameCell.setCellValue(name);
+                eventCell = row.createCell(1);
+                eventCell.setCellValue(textHep100mHurdles.getText());
+                points = row.createCell(2);
+                points.setCellValue(hep100m);
+
+                row = sheet.createRow(2);
+                eventCell = row.createCell(1);
+                eventCell.setCellValue(textHepHighJump.getText());
+                points = row.createCell(2);
+                points.setCellValue(hepHighJump);
+
+                row = sheet.createRow(3);
+                eventCell = row.createCell(1);
+                eventCell.setCellValue(textHepShotPut.getText());
+                points = row.createCell(2);
+                points.setCellValue(hepShotPut);
+
+                row = sheet.createRow(4);
+                eventCell = row.createCell(1);
+                eventCell.setCellValue(textHep200m.getText());
+                points = row.createCell(2);
+                points.setCellValue(hep200m);
+
+                row = sheet.createRow(5);
+                eventCell = row.createCell(1);
+                eventCell.setCellValue(textHepLongJump.getText());
+                points = row.createCell(2);
+                points.setCellValue(hepLongJump);
+
+                row = sheet.createRow(6);
+                eventCell = row.createCell(1);
+                eventCell.setCellValue(textHepJavelinThrow.getText());
+                points = row.createCell(2);
+                points.setCellValue(hepJavelinThrow);
+
+                row = sheet.createRow(7);
+                eventCell = row.createCell(1);
+                eventCell.setCellValue(textHep800m.getText());
+                points = row.createCell(2);
+                points.setCellValue(hep800m);
+
+                row = sheet.createRow(1);
+                eventCell2 = row.createCell(4);
+                eventCell2.setCellValue(textDeca100m.getText());
+                point2 = row.createCell(5);
+                point2.setCellValue(dec100m);
+
+                row = sheet.createRow(2);
+                eventCell2 = row.createCell(4);
+                eventCell2.setCellValue(textDecaLongJump.getText());
+                point2 = row.createCell(5);
+                point2.setCellValue(decLongJump);
+
+                row = sheet.createRow(3);
+                eventCell2 = row.createCell(4);
+                eventCell2.setCellValue(textDecaShotPut.getText());
+                point2 = row.createCell(5);
+                point2.setCellValue(decShotPut);
+
+                row = sheet.createRow(4);
+                eventCell2 = row.createCell(4);
+                eventCell2.setCellValue(textDecaHighJump.getText());
+                point2 = row.createCell(5);
+                point2.setCellValue(decHighJump);
+
+                row = sheet.createRow(5);
+                eventCell2 = row.createCell(4);
+                eventCell2.setCellValue(textDeca400m.getText());
+                point2 = row.createCell(5);
+                point2.setCellValue(dec400m);
+
+                row = sheet.createRow(6);
+                eventCell2 = row.createCell(4);
+                eventCell2.setCellValue(textDeca110mHurdles.getText());
+                point2 = row.createCell(5);
+                point2.setCellValue(dec110H);
+
+                row = sheet.createRow(7);
+                eventCell2 = row.createCell(4);
+                eventCell2.setCellValue(textDecaDiscusThrow.getText());
+                point2 = row.createCell(5);
+                point2.setCellValue(decDiscus);
+
+                row = sheet.createRow(8);
+                eventCell2 = row.createCell(4);
+                eventCell2.setCellValue(textDecaPoleVault.getText());
+                point2 = row.createCell(5);
+                point2.setCellValue(decPoleVault);
+
+                row = sheet.createRow(9);
+                eventCell2 = row.createCell(4);
+                eventCell2.setCellValue(textDecaJavelinThrow.getText());
+                point2 = row.createCell(5);
+                point2.setCellValue(decJavelinT);
+
+                row = sheet.createRow(10);
+                eventCell2 = row.createCell(4);
+                eventCell2.setCellValue(textDeca1500m.getText());
+                point2 = row.createCell(5);
+                point2.setCellValue(dec1500m);
+
+                try (FileOutputStream outputStream = new FileOutputStream("user_data.xlsx")) {
+                    workbook.write(outputStream);
+                    System.out.println("Data written to Excelfile successfully!");
+                } catch (IOException ex) {
+                    ex.printStackTrace();
+                }
+
+            }
+        });
+
+
+
+    }public static void main (String[]args){
         new Ground();
     }
 }

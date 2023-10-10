@@ -158,6 +158,7 @@ public class SelectDiscipline {
 		System.out.println("Choose contestant");
 		System.out.println(keyValueMap);
 		String thisPlayerChoice = sc.nextLine();
+		playerChoice=-1;
 
 		if (thisPlayerChoice.matches("[0-9]+")) {
 			playerChoice = Integer.parseInt(thisPlayerChoice) - 1;

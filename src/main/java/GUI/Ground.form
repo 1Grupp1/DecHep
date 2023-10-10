@@ -808,7 +808,7 @@
           <visible value="true"/>
         </properties>
       </component>
-      <component id="b26d0" class="javax.swing.JTextField" binding="SCORETextField" default-binding="true">
+      <component id="b26d0" class="javax.swing.JTextField" binding="RESULTTextField" default-binding="true">
         <constraints>
           <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
@@ -823,7 +823,7 @@
           <foreground color="-16711423"/>
           <horizontalAlignment value="0"/>
           <opaque value="true"/>
-          <text value="SCORE"/>
+          <text value="RESULT"/>
           <visible value="true"/>
         </properties>
       </component>
@@ -842,7 +842,7 @@
           <text value="POINTS"/>
         </properties>
       </component>
-      <component id="b7f63" class="javax.swing.JTextField" binding="SCORETextField2">
+      <component id="b7f63" class="javax.swing.JTextField" binding="ResultTextField2">
         <constraints>
           <grid row="4" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
@@ -854,7 +854,7 @@
           <font name="Comic Sans MS" style="1"/>
           <foreground color="-16711423"/>
           <horizontalAlignment value="0"/>
-          <text value="SCORE"/>
+          <text value="RESULT"/>
         </properties>
       </component>
       <component id="becd2" class="javax.swing.JTextPane" binding="textDeca100m">
@@ -952,14 +952,15 @@
           <text value="Calculate Total Points!"/>
         </properties>
       </component>
-      <component id="4b4d6" class="javax.swing.JButton" binding="buttonEraseScore">
+      <component id="4b4d6" class="javax.swing.JButton" binding="buttonSaveScore">
         <constraints>
           <grid row="16" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <background color="-324352"/>
+          <background color="-15402236"/>
           <foreground color="-16514044"/>
-          <text value="Delete Score"/>
+          <label value="Save to Excel"/>
+          <text value="Save to Excel"/>
         </properties>
       </component>
       <component id="248a9" class="javax.swing.JSeparator">
