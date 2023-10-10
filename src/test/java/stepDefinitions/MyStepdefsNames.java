@@ -8,6 +8,8 @@ import io.cucumber.java.en.When;
 import static org.junit.Assert.assertEquals;
 
 public class MyStepdefsNames {
+
+    //These are the saved names for the tests
     String nameInput = "Elin";
     String nameNumber = "name2";
     String nameNumbers = "123Elin";
@@ -15,6 +17,9 @@ public class MyStepdefsNames {
     String nameWithNumbers = "Elin123";
     String nameWithSpecial = "Elin?";
 
+
+    //In this class you register the name
+    //If the name includes special characters or numbers it will be invalid
     @Given("I want to register {string}")
     public void iWantToRegister(String name) {
         if (name.equalsIgnoreCase("Elin")) {
@@ -30,6 +35,7 @@ public class MyStepdefsNames {
 
     }
 
+    //Here you either choose Heptathlon or Decathlon
     @And("I select the {string} in step")
     public void iSelectTheInStep(String event) {
         if (event.equalsIgnoreCase("Heptathlon")) {
@@ -41,6 +47,8 @@ public class MyStepdefsNames {
         }
     }
 
+    //In this class you save the name and the event you will be doing
+    //Event is either Decathlon or Heptathlon
     @When("I save the {string} and {string}")
     public void iSaveTheAnd(String name, String event) {
         if (name.equalsIgnoreCase("Elin")) {
@@ -65,7 +73,7 @@ public class MyStepdefsNames {
 
     }
 
-
+    //In this last class you will either get a valid message or invalid message
     @Then("The {string} is shown")
     public void theIsShown(String error) {
         System.out.println("The name is " + error);
