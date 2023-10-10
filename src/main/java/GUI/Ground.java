@@ -74,6 +74,7 @@ public class Ground extends JFrame {
     private JTextField POINTSTextField;
     private JTextField SCORETextField2;
     private JTextField POINTSTextField2;
+    private JTextField totalpointsBox2;
 
     public Ground() {
         setContentPane(GroundPanel);
@@ -418,6 +419,7 @@ public class Ground extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 int totalPoints = 0;
+                int totalPoints2 = 0;
                 try {
                     int score1 = scoreHepShotPutPoints.getText().isEmpty() ? 0 : Integer.parseInt(scoreHepShotPutPoints.getText());
                     int score2 = scoreHep100mHurdlesPoints.getText().isEmpty() ? 0 : Integer.parseInt(scoreHep100mHurdlesPoints.getText());
@@ -436,12 +438,15 @@ public class Ground extends JFrame {
                     int score15 = scoreDecaPoleVaultPoints.getText().isEmpty() ? 0 : Integer.parseInt(scoreDecaPoleVaultPoints.getText());
                     int score16 = scoreDecaJavelinThrowPoints.getText().isEmpty() ? 0 : Integer.parseInt(scoreDecaJavelinThrowPoints.getText());
                     int score17 = scoreDeca1500mPoints.getText().isEmpty() ? 0 : Integer.parseInt(scoreDeca1500mPoints.getText());
-                    totalPoints = score1 + score2 + score3 + score4 + score5 + score6 + score7 + score8 + score9 + score10 + score11 + score12 + score13 + score14 + score15 + score16 + score17;
+                    totalPoints = score1 + score2 + score3 + score4 + score5 + score6 + score7;
+                    totalPoints2 = score8 + score9 + score10 + score11 + score12 + score13 + score14 + score15 + score16 + score17;
                 } catch (NumberFormatException ex) {
                     JOptionPane.showMessageDialog(null, "Please enter valid numbers in all fields");
                     return;
                 }
                 totalPointsBox.setText(String.format("%d", totalPoints));
+                totalpointsBox2.setText(String.format("%d", totalPoints2));
+
             }
         });
 
