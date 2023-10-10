@@ -9,6 +9,7 @@ import static org.junit.Assert.assertEquals;
 
 public class StepDefinitionsTrack {
 
+    //Here we put in the score from the calculate.feature
     int scoredec = 651;
     int scorehep = 1108;
     int score400M = 1634;
@@ -16,6 +17,8 @@ public class StepDefinitionsTrack {
     int score1500M = 1260;
     int score800M = 693;
     int score110M = 975;
+
+    //In this part of the code we put in the result from the calculate.feature
     int resultdec = 13;
     int resulthep = 12;
     int result400 = 35;
@@ -24,6 +27,9 @@ public class StepDefinitionsTrack {
     int result800M = 150;
     int result110M = 14;
 
+    //In this first given you choose the discipline
+    //You choose from a variety of diffrent track disciplines
+    //You choose either heptathlon or decathlon
     @Given("I have selected {string}")
     public void iselected(String gren) {
         if (gren.equalsIgnoreCase("Deca100M")) {
@@ -49,6 +55,9 @@ public class StepDefinitionsTrack {
         }
     }
 
+    //In this class you enter you're result
+    //One valid result and two invalid results
+    //The two invalid results are one above the limit and one under the limit.
     @And("I enter the {double}")
     public void enterresult(double resultInput) {
         if (resultInput == resultdec) {
@@ -116,7 +125,7 @@ public class StepDefinitionsTrack {
         }
     }
 
-
+    //In this class you verify the score to see if you get any points or not
     @Then("I verify the {int}")
     public void iverify(int scoreInput) {
         if (scoreInput == scoredec) {
@@ -180,7 +189,7 @@ public class StepDefinitionsTrack {
 
     }
 
-
+    //In this class you either get a invalid message or you get a valid message
     @Then("errormessage is shown {string}")
     public void errormessageIsShown(String text) {
 
