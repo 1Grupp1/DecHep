@@ -125,11 +125,11 @@ public class Ground extends JFrame {
                 double distance = 0;
                 try {
                     distance = Double.parseDouble(scoreHepHighJump.getText());
-                    if (distance < 75.5 || distance > 260) {
+                    if (distance < 75.7 || distance > 260) {
                         throw new NumberFormatException();
                     }
                 } catch (NumberFormatException ex) {
-                    JOptionPane.showMessageDialog(null, "Please enter a valid number between 75.5 and 260 centimeters");
+                    JOptionPane.showMessageDialog(null, "Please enter a valid number between 75.7 and 260 centimeters");
                     return;
                 }
                 HeptHightJump heptHightJump = new HeptHightJump();
@@ -240,11 +240,11 @@ public class Ground extends JFrame {
                 double runningTime = 0;
                 try {
                     runningTime = Double.parseDouble(scoreDeca100m.getText());
-                    if (runningTime < 9 || runningTime > 17.9) {
+                    if (runningTime < 9 || runningTime > 17.8) {
                         throw new NumberFormatException();
                     }
                 } catch (NumberFormatException ex) {
-                    JOptionPane.showMessageDialog(null, "Please enter a valid number between 9 and 17.9 seconds");
+                    JOptionPane.showMessageDialog(null, "Please enter a valid number between 9 and 17.8 seconds");
                     return;
                 }
                 Deca100M deca100M = new Deca100M();

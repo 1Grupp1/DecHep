@@ -315,7 +315,7 @@
           <background color="-264199"/>
           <foreground color="-16711423"/>
           <horizontalAlignment value="0"/>
-          <toolTipText value="Enter score in seconds, max 17.9, min 9  "/>
+          <toolTipText value="Enter score in seconds, max 17.8, min 9  "/>
         </properties>
       </component>
       <component id="22162" class="javax.swing.JTextField" binding="scoreDecaLongJump">
@@ -908,7 +908,7 @@
           <foreground color="-16711423"/>
           <horizontalAlignment value="0"/>
           <text value=""/>
-          <toolTipText value="Enter score in centimeters, max 260, min 75,5"/>
+          <toolTipText value="Enter score in centimeters, max 260, min 75,7"/>
         </properties>
       </component>
       <component id="16095" class="javax.swing.JTextField" binding="scoreHepShotPut">
