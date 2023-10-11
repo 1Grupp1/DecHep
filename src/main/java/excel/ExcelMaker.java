@@ -36,7 +36,7 @@ public class ExcelMaker {
 
             // Load the existing workbook if it exists, or create a new one
             XSSFWorkbook workbook;
-            File file = new File("Decathlon/Heptathlon_event_data.xlsx");
+            File file = new File("Decathlon_Heptathlon_event_data.xlsx");
             if (file.exists() && !saveExcel) {
 
                 FileInputStream fis = new FileInputStream(file);
@@ -99,10 +99,10 @@ public class ExcelMaker {
             }
 
             // Write the workbook back to the file system
-            FileOutputStream out = new FileOutputStream("Decathlon/Heptathlon_event_data.xlsx");
+            FileOutputStream out = new FileOutputStream("Decathlon_Heptathlon_event_data.xlsx");
             workbook.write(out);
             out.close();
-            System.out.println("Decathlon/Heptathlon_event_data.xlsx written successfully on disk.");
+            System.out.println("Decathlon_Heptathlon_event_data.xlsx written successfully on disk.");
         } catch(Exception e){
             e.printStackTrace();
         }
