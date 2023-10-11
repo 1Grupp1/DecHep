@@ -125,7 +125,7 @@ public class SelectDiscipline {
 	public static void runKeyValueApp() {
 		if(numberOfUser) {
 			try {
-				System.out.print("Enter number of participants: ");
+				System.out.print("Enter number of participants from 1-40: ");
 				Scanner sc = new Scanner(System.in);
 
 				String users =sc.nextLine();
@@ -133,7 +133,7 @@ public class SelectDiscipline {
 				if (users.matches("[0-9]+")) {
 					numberOfKeys= Integer.parseInt(users);}
 
-				if (numberOfKeys>0){
+				if (numberOfKeys>0 && numberOfKeys<=40){
 					numberOfUser = false;
 					InputName.addCompetitor(numberOfKeys);
 
