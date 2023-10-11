@@ -99,7 +99,7 @@ public class ExcelMaker {
             }
 
             // Write the workbook back to the file system
-            FileOutputStream out = new FileOutputStream("Decathlon.xlsx");
+            FileOutputStream out = new FileOutputStream("Decathlon/Heptathlon_event_data.xlsx");
             workbook.write(out);
             out.close();
             System.out.println("Decathlon.xlsx written successfully on disk.");
