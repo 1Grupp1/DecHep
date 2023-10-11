@@ -125,7 +125,7 @@ public class SelectDiscipline {
 	public static void runKeyValueApp() {
 		if(numberOfUser) {
 			try {
-				System.out.print("Enter number of participants: ");
+				System.out.print("Enter number of participants from 1-40: ");
 				Scanner sc = new Scanner(System.in);
 
 				String users =sc.nextLine();
@@ -133,7 +133,7 @@ public class SelectDiscipline {
 				if (users.matches("[0-9]+")) {
 					numberOfKeys= Integer.parseInt(users);}
 
-				if (numberOfKeys>0){
+				if (numberOfKeys>0 && numberOfKeys<=40){
 					numberOfUser = false;
 					InputName.addCompetitor(numberOfKeys);
 
@@ -156,7 +156,13 @@ public class SelectDiscipline {
 	public static void collectKeyValues() {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Choose contestant");
-		System.out.println(keyValueMap);
+		int i=1;
+		for (String key : keyValueMap.keySet()) {
+
+			String value = String.valueOf(keyValueMap.get(key));
+			System.out.println("Press "+i +" for: " + key + ": " + value);
+			i++;
+		}
 		String thisPlayerChoice = sc.nextLine();
 		playerChoice=-1;
 
@@ -177,11 +183,10 @@ public class SelectDiscipline {
 		String key = getKey(playerChoice);
 		int value=result;
 		addKeyValue(key, value);
-		System.out.println(keyValueMap);
 
 	}
 	public static void addKey(String key) {
-		keyValueMap.put(key, null);}
+		keyValueMap.put(key, 0);}
 
 	public static String getKey(int index) {
 		return (String) keyValueMap.keySet().toArray()[index];
@@ -197,7 +202,6 @@ public class SelectDiscipline {
 		System.out.println();
 		System.out.println("Select discipline:");
 		System.out.println();
-
 
 		try {
 
