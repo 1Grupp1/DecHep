@@ -320,51 +320,61 @@ public class SelectDiscipline {
 				System.out.println("You have selected Decathlon 100M, input your result in seconds.");
 				System.out.println("Valid results is between 9 sek and 17.8 sek.");
 				deca100M.calculateResult(inputResult.enterResult());
+				result=deca100M.getScore();
 				break;
 			case 2:
 				System.out.println("You have selected Decathlon 400M, input your result in seconds.");
 				System.out.println("Valid results is between 42.5 sek and 81 sek.");
 				deca400M.calculateResult(inputResult.enterResult());
+				result=deca400M.getScore();
 				break;
 			case 3:
 				System.out.println("You have selected Decathlon 110M Hurdles, input your result in seconds.");
 				System.out.println("Valid results is between 12 sek and 28 sek.");
 				deca110MHurdles.calculateResult(inputResult.enterResult());
+				result=deca110MHurdles.getScore();
 				break;
 			case 4:
 				System.out.println("You have selected Decathlon 1500M, input your result in seconds.");
 				System.out.println("Valid results is between 180 sek and 474 sek.");
 				deca1500M.calculateResult(inputResult.enterResult());
+				result=deca1500M.getScore();
 				break;
 			case 5:
 				System.out.println("You have selected Decathlon Long Jump, input your result in centimeter.");
 				System.out.println("Valid results is between 225 cm and 1000 cm.");
 				decaLongJump.calculateResult(inputResult.enterResult());
+				result=decaLongJump.getScore();
 				break;
 			case 6:
 				System.out.println("You have selected Decathlon High Jump, input your result in centimeter.");
 				System.out.println("Valid results is between 76.2 cm and 260 cm.");
 				highJump.calculateResult(inputResult.enterResult());
+				result=highJump.getScore();
 				break;
 			case 7:
 				System.out.println("You have selected Decathlon Pole Vault, input your result in centimeter.");
 				System.out.println("Valid results is between 103 cm and 700 cm.");
 				poleVault.calculateResult(inputResult.enterResult());
+				result=poleVault.getScore();
 				break;
 			case 8:
 				System.out.println("You have selected Decathlon Discus Throw, input your result in meter.");
 				System.out.println("Valid results is between 4.1 m and 85 m.");
 				discusThrow.calculateResult(inputResult.enterResult());
+				result=discusThrow.getScore();
 				break;
 			case 9:
 				System.out.println("You have selected Decathlon Javelin Throw, input your result in meter.");
 				System.out.println("Valid results is between 7.2 m and 90 m.");
 				decaJavelinThrow.calculateResult(inputResult.enterResult());
+				result=decaJavelinThrow.getScore();
 				break;
 			case 10:
 				System.out.println("You have selected Decathlon Shot Put, input your result in meter.");
 				System.out.println("Valid results is between 1.53 m and 25 m.");
 				decaShotPut.calculateResult(inputResult.enterResult());
+				result=decaShotPut.getScore();
 				break;
 			default:
 				System.out.println("Invalid input, try again.");
@@ -372,8 +382,11 @@ public class SelectDiscipline {
 				inputSelection();
 				break;
 		}
+		int existingValue = keyValueMap.get(key) != null ? keyValueMap.get(key) : 0;
+		result=result+existingValue;
+		giveKeyValues();
 		excelMaker.excelMaker();
-
+		System.out.println("");
 	}
 
 
